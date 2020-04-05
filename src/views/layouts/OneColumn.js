@@ -1,0 +1,20 @@
+import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
+
+// Styles
+import '../../styles/base/structure.scss';
+
+const OneColumn = (props) => {
+	const styles = props.background ? {background: props.background} : {};
+	return (
+		<Container className="one-column">
+			<Row>
+				<Col className="col" xs={12} style={styles}>
+					{props.one}
+				</Col>
+			</Row>
+		</Container>
+	);
+}
+ 
+export default OneColumn;

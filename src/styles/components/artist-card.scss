@@ -1,0 +1,36 @@
+.artist-card {
+	width: 100%;
+	border: none;
+
+	.card-title {
+		font-weight: bold;
+	}
+
+	.card-subtitle {
+		font-style: italic;
+	}
+
+	&.v1 {
+		.card-body {
+			padding-left: .5rem;
+		}
+	}
+
+	&.v2 {
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+
+		@media screen and (max-width: 600px) {
+			flex-direction: column;
+		}
+
+		.card-img {
+			width: 33.333%;
+		}
+
+		.card-body {
+			padding-top: .5rem;
+		}
+	}
+}

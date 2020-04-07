@@ -29,7 +29,7 @@
 			color: #fff;
 			font-weight: bold;
 			text-transform: uppercase;
-			transition: 0.3s;
+			transition: .3s;
 			z-index: 3;
 		}
 
@@ -41,6 +41,8 @@
 			text-align: left;
 			color: #fff;
 			font-weight: bold;
+			font-style: italic;
+			font-size: 1rem;
 			text-transform: uppercase;
 			opacity: 0;
 			transition: 0.4s;
@@ -53,7 +55,7 @@
 			}
 			
 			.square-image__subtitle {
-				opacity: 1;			
+				opacity: 1;	
 			}
 		}
 	}

@@ -12,6 +12,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1",
+    "react-strap": "0.0.1",
     "reactstrap": "^8.4.1",
     "rfs": "^9.0.2",
     "sass-lint": "^1.13.1"
@@ -44,6 +45,7 @@
     "@storybook/addon-links": "^5.3.13",
     "@storybook/addons": "^5.3.13",
     "@storybook/preset-create-react-app": "^1.5.2",
-    "@storybook/react": "^5.3.13"
+    "@storybook/react": "^5.3.13",
+    "gh-pages": "^2.2.0"
   }
 }

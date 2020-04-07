@@ -9,10 +9,10 @@ const TwoColumn = (props) => {
 	return (
 		<Container className="two-column big-small">
 			<Row>
-				<Col className="col" xs={12} md={9} style={styles}>
+				<Col xs={12} md={9} style={styles}>
 					{props.one}
 				</Col>
-				<Col className="col" xs={12} md={3} style={styles}>
+				<Col xs={12} md={3} style={styles}>
 					{props.two}
 				</Col>
 			</Row>

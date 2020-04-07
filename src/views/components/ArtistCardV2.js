@@ -1,12 +1,13 @@
 import React from 'react';
 import { Card, CardBody, CardImg, CardTitle, CardSubtitle, CardText } from 'reactstrap';
+
+import Section from '../layouts/Section';
 import TwoColumn from '../layouts/TwoColumn';
 
 // Styles
 import '../../styles/components/artist-card.scss';
 
 import image from '../../assets/images/Cygnet 2.jpg';
-
 
 const ArtistCardV2 = (props) => {
     return (
@@ -31,12 +32,14 @@ const ArtistCardV2 = (props) => {
 
 const TwoArtistCard = () => {
     return (
-        <TwoColumn
-            one={<ArtistCardV2 name={'Eros Cara'} title={'Owner'} description={"Deserunt magna ipsum nostrud duis consectetur pariatur proident enim labore nostrud sint officia et. Est ullamco do velit consectetur occaecat. Ea in labore adipisicing ut ut elit anim Lorem laborum magna ipsum dolor."} />} 
-            two={<ArtistCardV2 name={'Jem Fella'} title={'Apprentice'} description={"Deserunt magna ipsum nostrud duis consectetur pariatur proident enim labore nostrud sint officia et. Est ullamco do velit consectetur occaecat. Ea in labore adipisicing ut ut elit anim Lorem laborum magna ipsum dolor."} />} 
-        />
+        <Section className="test">
+            <TwoColumn
+                one={<ArtistCardV2 name={'Eros Cara'} title={'Owner'} description={"Deserunt magna ipsum nostrud duis consectetur pariatur proident enim labore nostrud sint officia et. Est ullamco do velit consectetur occaecat. Ea in labore adipisicing ut ut elit anim Lorem laborum magna ipsum dolor."} />} 
+                two={<ArtistCardV2 name={'Jem Fella'} title={'Apprentice'} description={"Deserunt magna ipsum nostrud duis consectetur pariatur proident enim labore nostrud sint officia et. Est ullamco do velit consectetur occaecat. Ea in labore adipisicing ut ut elit anim Lorem laborum magna ipsum dolor."} />} 
+            />
+        </Section>
     );
 }
- 
+
 export default TwoArtistCard;
 

@@ -9,7 +9,7 @@ const OneColumn = (props) => {
 	return (
 		<Container className="one-column">
 			<Row>
-				<Col className="col" xs={12} style={styles}>
+				<Col xs={12} style={styles}>
 					{props.one}
 				</Col>
 			</Row>

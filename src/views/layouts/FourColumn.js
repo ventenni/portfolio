@@ -9,17 +9,17 @@ const FourColumn = (props) => {
 	return (
 		<Container className="four-column">
 			<Row>
-				<Col className="col" xs={12} md={6} lg={3} style={styles}>
+				<Col xs={12} lg={3} style={styles}>
 					{props.one}
 				</Col>
-				<Col className="col" xs={12} md={6} lg={3} style={styles}>
+				<Col xs={12} lg={3} style={styles}>
 					{props.two}
 				</Col>
-				<Col className="col" xs={12} md={6} lg={3} style={styles}>
+				<Col xs={12} lg={3} style={styles}>
 					{props.three}
 				</Col>
-				<Col className="col" xs={12} md={6} lg={3} style={styles}>
-					{props.three}
+				<Col xs={12} lg={3} style={styles}>
+					{props.four}
 				</Col>
 			</Row>
 		</Container>

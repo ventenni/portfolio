@@ -2,6 +2,7 @@
   "name": "my-storybook",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://ventenni.github.io/portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -18,12 +19,15 @@
     "sass-lint": "^1.13.1"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "build-storybook": "build-storybook -s public",
+    "deploy": "gh-pages -d build",
+    "deploy-storybook": "storybook-to-ghpages",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "start": "react-scripts start",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -46,6 +50,7 @@
     "@storybook/addons": "^5.3.13",
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.13",
+    "@storybook/storybook-deployer": "^2.8.5",
     "gh-pages": "^2.2.0"
   }
 }

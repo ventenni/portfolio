@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import '../../styles/components/Nav--middleOut.scss';
+import '../../styles/components/nav--middleOut.scss';
 
 // Reactstrap Components
 import {

@@ -1,0 +1,10 @@
+.image-modal {
+	max-width: 200px;
+	height: auto;
+	
+	&__image {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}

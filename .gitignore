@@ -10,6 +10,8 @@
 
 # production
 /build
+.out/
+out7322/
 
 # misc
 .DS_Store

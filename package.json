@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "build-storybook -c .storybook -o .out",
     "deploy": "gh-pages -d build",
     "deploy-storybook": "storybook-to-ghpages",
     "eject": "react-scripts eject",

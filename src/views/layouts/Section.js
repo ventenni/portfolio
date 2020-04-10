@@ -3,7 +3,7 @@ import { Container, Row} from 'reactstrap';
 
 const Section = (props) => {
 	return (
-		<Container className="test">
+		<Container fluid={props.fluid} className="test">
 			<Row>
 				{props.children}
 			</Row>

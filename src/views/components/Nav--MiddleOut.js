@@ -38,7 +38,7 @@ const SiteNav = (props) => {
           </NavItem>
           
           <NavbarBrand href="/">
-            <img src="https://scontent.fbne5-1.fna.fbcdn.net/v/t1.0-9/41684329_2023915690993422_833039603190464512_o.jpg?_nc_cat=101&_nc_ohc=BZY1imwT9CYAX_ZbVJb&_nc_ht=scontent.fbne5-1.fna&oh=e74dc3c11c760e7a0bf87dbac04c1574&oe=5E9DA325" height="125" width="125" alt="brand" />
+            <img src="https://via.placeholder.com/100" height="125" width="125" alt="brand" />
           </NavbarBrand>
           
           <NavItem>

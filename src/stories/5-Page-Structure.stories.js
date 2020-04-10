@@ -15,6 +15,6 @@ export default {
 
 export const oneColumn = () => <OneColumn background={'#1b76ec'} />;
 export const twoColumn = () => <TwoColumn background={"#1b76ec"} />;
-export const twoColumnBigSmall = () => <TwoColumnBigSmall background={"#1b76ec"} />;
+export const twoColumnBigSmall = () => <TwoColumnBigSmall bigBackground={"#fff00"} smallBackground={"#1b76ec"} />;
 export const threeColumn = () => <ThreeColumn background={"#1b76ec"} />;
 export const fourColumn = () => <FourColumn background={"#1b76ec"} />

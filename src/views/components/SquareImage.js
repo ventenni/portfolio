@@ -1,9 +1,6 @@
 // React
 import React from 'react';
 
-// Components
-import ThreeColumn from '../layouts/ThreeColumn';
-
 // Assets
 import image from '../../assets/images/Cygnet 2.jpg';
 
@@ -28,17 +25,4 @@ const SquareImage = (props) => {
 	);
 }
  
-// export default SquareImage;
-
-
-const ThreeColumnSquareImage = () => {
-	return (
-		<ThreeColumn 
-		one={<SquareImage title={"Title"} subtitle={"Subtitle"} />}
-		two={<SquareImage title={"Title"} subtitle={"Subtitle"} />}
-		three={<SquareImage title={"Title"} subtitle={"Subtitle"} />}
-		/>
-	);
-}
- 
-export default ThreeColumnSquareImage;
+export default SquareImage;

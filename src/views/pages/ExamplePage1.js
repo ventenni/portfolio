@@ -8,14 +8,17 @@ import ThreeColumn from '../layouts/ThreeColumn';
 // import FourColumn from '../layouts/FourColumn';
 
 // Components
+import GeneralCopy from '../components/GeneralCopy';
 import Hero from '../components/Hero';
-import ImageModal from '../components/ImageModal';
 import ImageModalGallery from '../components/ImageModalGallery';
 import ProfileCardV1 from '../components/ProfileCardV1';
 import SquareImage from '../components/SquareImage';
 
 // Assets
 import placeholderImage from '../../assets/images/Cygnet 2.jpg';
+
+// Data
+import generalCopyData from '../data/generalCopyData.json';
 
 const ExamplePage1 = () => {
 	const [imageModalGalleryState, setImageModalGalleryState] = useState(
@@ -43,16 +46,13 @@ const ExamplePage1 = () => {
 			},
 			{
 				"image": placeholderImage
-			},
-			{
-				"image": placeholderImage
-			},
-			{
-				"image": placeholderImage
 			}
 		]
 	);
 
+	const [generalCopyState, setGeneralCopyState] = useState(generalCopyData);
+
+	console.log(generalCopyState);
 	return (
 		<div>
 			<Hero image={`url(http://ferno.com.pl/wp-content/uploads/2015/05/1-2000x500.jpg)`} />
@@ -74,6 +74,10 @@ const ExamplePage1 = () => {
 
 			<Section fluid={true}>
 				<ImageModalGallery items={imageModalGalleryState} />
+			</Section>
+
+			<Section>
+				<OneColumn one={<GeneralCopy copy={generalCopyState.copy} />} />
 			</Section>
 		</div>
 	);

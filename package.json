@@ -52,6 +52,9 @@
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.13",
     "@storybook/storybook-deployer": "^2.8.5",
-    "gh-pages": "^2.2.0"
+    "css-loader": "^3.5.2",
+    "file-loader": "^6.0.0",
+    "gh-pages": "^2.2.0",
+    "style-loader": "^1.1.4"
   }
 }

@@ -14,6 +14,8 @@ import {
 } from 'reactstrap';
 
 // import Logo from './../assets/images/thinker.jpg'
+import Logo from './../../assets/images/drawing.svg';
+
 
 const SiteNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +40,7 @@ const SiteNav = (props) => {
           </NavItem>
           
           <NavbarBrand href="/">
-            <img src="https://via.placeholder.com/100" height="125" width="125" alt="brand" />
+            <img src={Logo} height="125" width="125" alt="brand" />
           </NavbarBrand>
           
           <NavItem>

@@ -9,13 +9,13 @@ const ThreeColumn = (props) => {
 	return (
 		<Container className="three-column">
 			<Row>
-				<Col xs={12} lg={4} style={styles}>
+				<Col xs={12} md={6} lg={4} style={styles}>
 					{props.one}
 				</Col>
-				<Col xs={12} lg={4} style={styles}>
+				<Col xs={12} md={6} lg={4} style={styles}>
 					{props.two}
 				</Col>
-				<Col xs={12} lg={4} style={styles}>
+				<Col xs={12} md={6} lg={4} style={styles}>
 					{props.three}
 				</Col>
 			</Row>

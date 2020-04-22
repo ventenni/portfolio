@@ -12,10 +12,6 @@
 	&.two-column {
 		.row {
 			justify-content: space-evenly;
-
-			.col-md-6 {
-				max-width: 45%;
-			}
 		}
 
 		&.big-small {
@@ -28,22 +24,12 @@
 	&.three-column {
 		.row {
 			justify-content: space-evenly;
-	
-			.col-md-4,
-			.col-lg-4 {
-				max-width: 30%;
-			}
 		}
 	}
 
 	&.four-column {
 		.row {
 			justify-content: space-evenly;
-	
-			.col-md-3,
-			.col-lg-3 {
-				max-width: 24%;
-			}
 		}
 	}
 }

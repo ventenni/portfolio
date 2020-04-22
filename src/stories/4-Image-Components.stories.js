@@ -8,10 +8,12 @@ import placeholderImage from '../assets/images/Cygnet 2.jpg';
 import Section from '../views/layouts/Section';
 import TwoColumn from '../views/layouts/TwoColumn';
 import ThreeColumn from '../views/layouts/ThreeColumn';
+import FourColumn from '../views/layouts/FourColumn';
 
 // Components
 import ProfileCardV1 from '../views/components/ProfileCardV1';
 import ProfileCardV2 from '../views/components/ProfileCardV2';
+import ProfileCoverCard from '../views/components/ProfileCoverCard';
 import SquareImage from "../views/components/SquareImage";
 import ImageModal from "../views/components/ImageModal";
 
@@ -50,7 +52,18 @@ const ThreeColumnSquareImage = () => {
 	);
 }
 
+const ThreeColumnProfileCoverCard = () => {
+    return (
+        <ThreeColumn
+            one={<ProfileCoverCard profileImage={placeholderImage} />}
+            two={<ProfileCoverCard profileImage={placeholderImage} />}
+            three={<ProfileCoverCard profileImage={placeholderImage} />}
+        />
+    )
+}
+
 export const profileCardV1 = () => <ThreeProfileCard />;
 export const profileCardV2 = () => <TwoProfileCard />;
+export const profileCoverCard = () => <ThreeColumnProfileCoverCard />;
 export const squareImage = () => <ThreeColumnSquareImage />;
 export const modal = () => <ImageModal image={placeholderImage} />;

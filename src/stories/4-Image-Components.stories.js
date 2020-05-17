@@ -6,16 +6,18 @@ import placeholderImage from '../assets/images/Cygnet 2.jpg';
 
 // Page Structure
 import Section from '../views/layouts/Section';
+import OneColumn from '../views/layouts/OneColumn';
 import TwoColumn from '../views/layouts/TwoColumn';
 import ThreeColumn from '../views/layouts/ThreeColumn';
-import FourColumn from '../views/layouts/FourColumn';
+// import FourColumn from '../views/layouts/FourColumn';
 
 // Components
+import Carousel from "../views/components/Carousel";
+import ImageModal from "../views/components/ImageModal";
 import ProfileCardV1 from '../views/components/ProfileCardV1';
 import ProfileCardV2 from '../views/components/ProfileCardV2';
 import ProfileCoverCard from '../views/components/ProfileCoverCard';
 import SquareImage from "../views/components/SquareImage";
-import ImageModal from "../views/components/ImageModal";
 
 export default {
     title: "Image Components"
@@ -62,8 +64,15 @@ const ThreeColumnProfileCoverCard = () => {
     )
 }
 
+const CarouselOneColumn = () => {
+    return (
+        <OneColumn one={<Carousel />} />
+    )
+}
+
+export const carousel = () => <CarouselOneColumn />
+export const modal = () => <ImageModal image={placeholderImage} />;
 export const profileCardV1 = () => <ThreeProfileCard />;
 export const profileCardV2 = () => <TwoProfileCard />;
 export const profileCoverCard = () => <ThreeColumnProfileCoverCard />;
 export const squareImage = () => <ThreeColumnSquareImage />;
-export const modal = () => <ImageModal image={placeholderImage} />;

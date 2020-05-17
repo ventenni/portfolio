@@ -55,7 +55,7 @@ const ExamplePage1 = () => {
 	console.log(generalCopyState);
 	return (
 		<div>
-			<Hero image={`url(http://ferno.com.pl/wp-content/uploads/2015/05/1-2000x500.jpg)`} />
+			<Hero image={`url(http://ferno.com.pl/wp-content/uploads/2015/05/1-2000x500.jpg)`} heading={"Example Page"} />
 
 			<Section>
 				<ThreeColumn 

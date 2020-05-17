@@ -20,7 +20,11 @@ const path = require('path');
 			use: [
 			'file-loader',
 			],
-		},
+    },
+    {
+      test: /\.(png|jpg)$/,
+      loader: 'url-loader'
+    }
       ],
     },
   };

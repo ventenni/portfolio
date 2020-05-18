@@ -17,5 +17,5 @@ const TwoColumn = (props) => {
 		</React.Fragment>
 	);
 }
- 
+
 export default TwoColumn;

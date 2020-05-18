@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8c69bcf0.chunk.css",
+    "main.js": "/portfolio/main.fcc5808ac665d71d0f90.bundle.js",
+    "main.css.map": "/portfolio/static/css/main.8c69bcf0.chunk.css.map",
+    "main.js.map": "/portfolio/main.fcc5808ac665d71d0f90.bundle.js.map",
+    "runtime~main.js": "/portfolio/runtime~main.fcc5808ac665d71d0f90.bundle.js",
+    "runtime~main.js.map": "/portfolio/runtime~main.fcc5808ac665d71d0f90.bundle.js.map",
+    "vendors~main.css": "/portfolio/static/css/vendors~main.69121389.chunk.css",
+    "vendors~main.js": "/portfolio/vendors~main.fcc5808ac665d71d0f90.bundle.js",
+    "vendors~main.css.map": "/portfolio/static/css/vendors~main.69121389.chunk.css.map",
+    "vendors~main.js.map": "/portfolio/vendors~main.fcc5808ac665d71d0f90.bundle.js.map",
+    "iframe.html": "/portfolio/iframe.html",
+    "precache-manifest.336114b58a40860ddca098a0dda7a750.js": "/portfolio/precache-manifest.336114b58a40860ddca098a0dda7a750.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/media/Cygnet 2.jpg": "/portfolio/static/media/Cygnet 2.1e5f046a.jpg",
+    "static/media/drawing.svg": "/portfolio/static/media/drawing.b2f93b86.svg",
+    "vendors~main.fcc5808ac665d71d0f90.bundle.js.LICENSE.txt": "/portfolio/vendors~main.fcc5808ac665d71d0f90.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.fcc5808ac665d71d0f90.bundle.js",
+    "static/css/vendors~main.69121389.chunk.css",
+    "vendors~main.fcc5808ac665d71d0f90.bundle.js",
+    "static/css/main.8c69bcf0.chunk.css",
+    "main.fcc5808ac665d71d0f90.bundle.js"
+  ]
+}

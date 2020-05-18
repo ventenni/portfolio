@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../styles/components/nav--clean.scss';
+import '../../assets/styles/components/nav--clean.scss';
 
 // Reactstrap Components
 import {

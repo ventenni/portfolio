@@ -1,0 +1,28 @@
+.hero-image{position:relative;height:500px;min-height:320px;margin:0 -15px}.hero-image__background{position:absolute;top:0;right:0;bottom:0;left:0;background-repeat:no-repeat;background-size:cover;background-position:center}.hero-image__background:after{display:block;position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(45deg, rgba(0,0,0,0.4), transparent 50%);content:''}.hero-image__content{position:absolute;bottom:3rem;left:3rem;color:#fff;z-index:44}
+
+h1{font-size:calc(1.525rem + 3.3vw)}@media (min-width: 1200px){h1{font-size:4rem}}h2{font-size:calc(1.4625rem + 2.55vw)}@media (min-width: 1200px){h2{font-size:3.375rem}}h3{font-size:calc(1.3375rem + 1.05vw)}@media (min-width: 1200px){h3{font-size:2.125rem}}p{font-size:1rem}a{font-size:1.25rem}.nav-middle-out .navbar{position:-webkit-sticky;position:sticky;top:0;right:0;left:0;padding:1rem;background-color:#fff;z-index:100}.nav-middle-out .navbar .navbar-nav{margin:0 auto;width:50%;display:flex;flex-direction:row;justify-content:space-evenly;align-items:center}.nav-middle-out .navbar .navbar-nav li{font-size:2em;list-style:none;color:#3478e5}.nav-middle-out .navbar .navbar-nav li a{text-decoration:none;transition:color 0.4s ease}.nav-middle-out .navbar .navbar-nav li a:hover{color:#000}
+
+.nav-clean{height:150px}.nav-clean .navbar-nav{display:grid;grid-template-rows:20%;grid-template-columns:1fr 1fr;height:100%}.nav-clean .navbar-left-side{grid-row:1/2;grid-column:1/2}.nav-clean .navbar-right-side{grid-row:1/2;grid-column:2/3;display:flex;flex-direction:row;justify-content:flex-end}.nav-clean .navbar-right-side .nav-item{padding:0.5em 0.5em;list-style:none}.nav-clean .navbar-right-side .nav-item a{text-decoration:none}
+
+.container{padding-bottom:2rem;padding-top:2rem}.container .row [class*='col-']{padding-top:1rem;padding-bottom:1rem}.container.two-column .row{justify-content:space-evenly}.container.two-column.big-small .row{justify-content:space-evenly}.container.three-column .row{justify-content:space-evenly}.container.four-column .row{justify-content:space-evenly}
+
+.image-modal{max-width:200px;height:auto}.image-modal__image:hover{cursor:pointer}
+
+.artist-card{width:100%;border:none}.artist-card .card-title{font-weight:bold;text-transform:uppercase}.artist-card .card-subtitle{font-style:italic;text-transform:uppercase}.artist-card.v1 .card-body{padding-left:.5rem}.artist-card.v2{display:flex;flex-direction:row;height:100%}@media screen and (max-width: 600px){.artist-card.v2{flex-direction:column}}.artist-card.v2 .card-img{width:33.333%;height:auto}.artist-card.v2 .card-body{padding-top:.5rem}
+
+.profile-cover-card{align-items:center;text-align:center;border:none}.profile-cover-card .card-body{position:relative;top:-6rem}.profile-cover-card .card-body .profile-cover-card__profile-image{width:50%;margin:0 auto;border-radius:50%;overflow:hidden}.profile-cover-card .card-body .profile-cover-card__profile-image img{width:100%;height:auto}.profile-cover-card .card-body .profile-cover-card__details{padding-top:2rem}
+
+.square-image{position:relative;padding-bottom:100%;overflow:hidden}.square-image a{position:absolute;top:0;right:0;bottom:0;left:0;height:100%}.square-image a .square-image__image{position:absolute;top:0;right:0;bottom:0;left:0;height:100%}.square-image a .square-image__title{position:absolute;right:4.5rem;bottom:1rem;left:2rem;text-align:left;color:#fff;font-weight:bold;text-transform:uppercase;transition:.3s;z-index:3}.square-image a .square-image__subtitle{position:absolute;right:4.5rem;bottom:1rem;left:2rem;text-align:left;color:#fff;font-weight:bold;font-style:italic;font-size:1rem;text-transform:uppercase;opacity:0;transition:0.4s;z-index:3}.square-image a:hover .square-image__title{bottom:3rem}.square-image a:hover .square-image__subtitle{opacity:1}
+
+.general-copy{text-align:center}
+
+.image-modal-gallery{display:flex;flex-direction:row;flex-wrap:wrap}.image-modal-gallery .image-modal{flex:1 1 20%}
+
+.profile-image{display:flex;flex-direction:row;align-items:center;max-width:500px}.profile-image__title{padding-left:2rem}
+
+.search{display:flex;flex-direction:row;align-items:center;padding:1rem;max-width:30%;border:1px solid black}.search__icon-box{width:30%}
+
+.my-maps{display:grid;grid-template-columns:30% 70%;grid-template-rows:100vh}.my-maps .left-column{grid-column:1/2;grid-row:1/2}.my-maps .right-column{grid-column:2/3;grid-row:1/2}
+
+
+/*# sourceMappingURL=main.8c69bcf0.chunk.css.map*/

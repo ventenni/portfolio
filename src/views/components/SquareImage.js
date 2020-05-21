@@ -5,7 +5,7 @@ import React from 'react';
 import image from '../../assets/images/Cygnet 2.jpg';
 
 // Styles
-import '../../styles/components/square-image.scss';
+import '../../assets/styles/components/square-image.scss';
 
 const SquareImage = (props) => {
 	return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { Jumbotron } from 'reactstrap';
 import { useSpring, animated } from 'react-spring';
 
-import '../../styles/components/hero.scss';
+import '../../assets/styles/components/hero.scss';
 
 const Hero = (props) => {
     const springStyle = useSpring({

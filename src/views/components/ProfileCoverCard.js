@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardImg, CardBody, CardText } from 'reactstrap';
 
 
-import './../../styles/components/profile-cover-card.scss';
+import './../../assets/styles/components/profile-cover-card.scss';
 
 const ProfileCoverCard = (props) => {
 	return (

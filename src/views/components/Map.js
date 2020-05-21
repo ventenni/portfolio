@@ -39,6 +39,9 @@ const Map = () => {
 					<div>0</div>
 				</Marker>	
 			</ReactMapGL>
+			<div>
+				<p>test git</p>
+			</div>
 		</div>
 	  );
 }

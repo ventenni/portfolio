@@ -16,6 +16,7 @@ const Search = () => {
 			</div>
 			<div className="search__text-box">
 				<p>Discover</p>
+				<input type="text" placeholder="Discover" />
 			</div>
 		</div>
 	);

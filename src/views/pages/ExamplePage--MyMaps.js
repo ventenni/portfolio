@@ -12,7 +12,7 @@ const MyMapsExmaplePage = () => {
 	return (
 		<div className="my-maps-page">
 			<div className="left-column">
-				<ProfileImage />
+				<ProfileImage image={"https://via.placeholder.com/100"} name={"Brenton Milnsie"} />
 				<Search />
 			</div>
 

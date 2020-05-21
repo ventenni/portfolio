@@ -1,6 +1,6 @@
-.my-maps {
+.my-maps-page {
 	display: grid;
-	grid-template-columns: 30% 70%;
+	grid-template-columns: 25% 75%;
 	grid-template-rows: 100vh;
 
 	.left-column {
@@ -11,5 +11,15 @@
 	.right-column {
 		grid-column: 2/3;
 		grid-row: 1/2;
+	}
+}
+
+.map {
+	width: 100% !important;
+	height: 100vh;
+
+	&__get-location {
+		position: relative;
+		z-index: 33;
 	}
 }

@@ -10,7 +10,7 @@ import '../../assets/styles/components/my-maps.scss';
 
 const MyMapsExmaplePage = () => {
 	return (
-		<div className="my-maps">
+		<div className="my-maps-page">
 			<div className="left-column">
 				<ProfileImage />
 				<Search />

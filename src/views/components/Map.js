@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 
 import ReactMapGL, { Marker } from 'react-map-gl';
 
+import '../../assets/styles/components/my-maps.scss';
 
 const Map = () => {
 	const [viewport, setViewport] = useState({
-		width: 400,
-		height: 400,
+		width: '100vw',
+		height: '100vh',
 		latitude: 37.7577,
 		longitude: -122.4376,
 		zoom: 8
@@ -15,8 +16,8 @@ const Map = () => {
 	function pos() {
 		navigator.geolocation.getCurrentPosition((position) => {
 			setViewport({
-				width: 700,
-				height: 700,
+				width: '100vw',
+				height: '100vh',
 				latitude: parseFloat(position.coords.latitude.toFixed(5)),
 				longitude: parseFloat(position.coords.longitude.toFixed(5)),
 				zoom: 14
@@ -25,11 +26,13 @@ const Map = () => {
 	  }
 	
 	  return (
-		<div>
-			<button onClick={() => { pos() }}>Get Current Location</button>
-			<div>{`Latitude ${viewport.latitude}`}</div>
-			<div>{`Longitude: ${viewport.longitude}`}</div>
-		
+		<div className="map">
+			<div className="map__get-location">
+				<button onClick={() => { pos() }}>Get Current Location</button>
+				<div>{`Latitude ${viewport.latitude}`}</div>
+				<div>{`Longitude: ${viewport.longitude}`}</div>
+			</div>
+
 			<ReactMapGL
 				{...viewport}
 				mapboxApiAccessToken={"pk.eyJ1IjoidmVudGVubmkiLCJhIjoiY2s5dXV5Ynh4MDVweTNlbzFtM3l4Yzg5biJ9.wOUTJYCKhxiIqSs7sMa1Gg"}
@@ -39,11 +42,8 @@ const Map = () => {
 					<div>0</div>
 				</Marker>	
 			</ReactMapGL>
-			<div>
-				<p>test git</p>
-			</div>
 		</div>
 	  );
 }
- 
+
 export default Map;

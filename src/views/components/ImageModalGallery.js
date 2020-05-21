@@ -7,7 +7,7 @@ import ImageModal from './ImageModal';
 import { v4 as uuidv4 } from 'uuid';
 
 // Styles
-import '../../styles/components/image-modal-gallery.scss';
+import '../../assets/styles/components/image-modal-gallery.scss';
 
 const ImageModalGallery = (props) => {
 	const width = document.documentElement.offsetWidth / props.items.length;

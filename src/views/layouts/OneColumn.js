@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
 // Styles
-import '../../styles/base/structure.scss';
+import '../../assets/styles/base/structure.scss';
 
 const OneColumn = (props) => {
 	const styles = props.background ? {background: props.background} : {};

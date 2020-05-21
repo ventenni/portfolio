@@ -5,7 +5,7 @@ import Map from '../components/Map';
 import ProfileImage from '../components/ProfileImage';
 import Search from '../components/Search';
 
-import '../../styles/components/my-maps.scss';
+import '../../assets/styles/components/my-maps.scss';
 
 
 const MyMapsExmaplePage = () => {

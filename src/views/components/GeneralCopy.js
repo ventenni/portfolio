@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Styles
-import '../../styles/components/general-copy.scss';
+import '../../assets/styles/components/general-copy.scss';
 
 const GeneralCopy = (props) => {
 	return (

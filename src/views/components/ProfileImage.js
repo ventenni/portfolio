@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../styles/components/profile-image.scss';
+import '../../assets/styles/components/profile-image.scss';
 
 const ProfileImage = (props) => {
 	return (

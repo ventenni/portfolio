@@ -1,0 +1,37 @@
+.nav-clean {
+	padding: 0 !important;
+	height: 50px;
+	background: #fff;
+	box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.20);
+
+	&__left {
+		justify-self: flex-start;
+
+		.navbar-brand {
+			padding: 0 !important;
+		}
+	}
+
+	&__right {
+		display: flex;
+		flex-direction: row;
+		justify-self: flex-end;
+		align-items: center;
+		margin-right: 5%;
+
+		.navbar-toggler {
+			border: none;
+		}
+
+		.nav-item {
+			padding: 0 0.5em;
+			list-style: none;
+
+			a {
+				padding: 0 !important;
+				font-size: 1em;
+				text-decoration: none;
+			}
+		}
+	}
+}

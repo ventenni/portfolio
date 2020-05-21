@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 
 // Styles
-import '../../styles/components/image-modal.scss';
+import '../../assets/styles/components/image-modal.scss';
 
 
 const ImageModal = (props) => {

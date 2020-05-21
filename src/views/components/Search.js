@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 // Style
-import '../../styles/components/search.scss';
+import '../../assets/styles/components/search.scss';
 
 
 const Search = () => {

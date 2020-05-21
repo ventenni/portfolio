@@ -1,0 +1,62 @@
+.square-image {
+	position: relative;
+    padding-bottom: 100%;
+	overflow: hidden;
+	
+	a {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+
+		.square-image__image {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+		}
+
+		.square-image__title {
+			position: absolute;
+			right: 4.5rem;
+			bottom: 1rem;
+			left: 2rem;
+			text-align: left;
+			color: #fff;
+			font-weight: bold;
+			text-transform: uppercase;
+			transition: .3s;
+			z-index: 3;
+		}
+
+		.square-image__subtitle {
+			position: absolute;
+			right: 4.5rem;
+			bottom: 1rem;
+			left: 2rem;
+			text-align: left;
+			color: #fff;
+			font-weight: bold;
+			font-style: italic;
+			font-size: 1rem;
+			text-transform: uppercase;
+			opacity: 0;
+			transition: 0.4s;
+			z-index: 3;
+		}
+
+		&:hover {
+			.square-image__title {
+				bottom: 3rem;
+			}
+			
+			.square-image__subtitle {
+				opacity: 1;	
+			}
+		}
+	}
+}

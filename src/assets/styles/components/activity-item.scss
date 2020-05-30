@@ -1,0 +1,15 @@
+.activity-item {
+	&__description {
+		font-weight: bold;;
+	}
+
+	&__location {
+		font-style: italic;
+	}
+
+	&__date {
+		font-size: .8em;
+		font-style: italic;
+	}
+
+}

@@ -1,15 +1,31 @@
 .activity-item {
-	&__description {
-		font-weight: bold;;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+
+	&__text-items {
+		display: flex;
+		flex-direction: column;
+		flex: 5 1 auto;
+		justify-self: flex-start;
+
+		&__description {
+			font-weight: bold;;
+		}
+
+		&__location {
+			font-style: italic;
+		}
+
+		&__date {
+			color: #9c9c9c;
+			font-size: .8em;
+		}
 	}
 
-	&__location {
-		font-style: italic;
+	&__button {
+		flex: 1 1 auto;
+		justify-self: flex-end;
 	}
-
-	&__date {
-		color: #9c9c9c;
-		font-size: .8em;
-	}
-
 }

@@ -11,17 +11,35 @@ const Activities = () => {
 	const [activity, setActivity] = useState([
 		{
 			activity: "Brent made clogs",
-			location: "Amsterdam, Netherlands",
+			location: {
+				address: "Schansend 1, 1509 AW Zaandam",
+				city: "Amsterdam",
+				country: "Netherlands",
+				latitude: "52.473460",
+				longitude: "4.820280"
+			},
 			date: "8th June, 2019"
 		},
 		{
 			activity: "Brent used toilet paper",
-			location: "Amsterdam, Netherlands",
+			location: {
+				address: "Schansend 1, 1509 AW Zaandam",
+				city: "Amsterdam",
+				country: "Netherlands",
+				latitude: "52.473460",
+				longitude: "4.820280"
+			},			
 			date: "8th June, 2019"
 		},
 		{
 			activity: "Brent sent food back for the fourth time this week",
-			location: "Amsterdam, Netherlands",
+			location: {
+				address: "Schansend 1, 1509 AW Zaandam",
+				city: "Amsterdam",
+				country: "Netherlands",
+				latitude: "52.473460",
+				longitude: "4.820280"
+			},
 			date: "8th June, 2019"
 		}
 	])

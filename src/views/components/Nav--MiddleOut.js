@@ -27,7 +27,7 @@ const SiteNav = (props) => {
 
       <NavbarToggler onClick={toggle} />
 
-      <Collapse isOpen={isOpen} navbar className="thinker-nav">
+      <Collapse isOpen={isOpen} navbar>
 
         <Nav navbar>
           
@@ -40,13 +40,12 @@ const SiteNav = (props) => {
           </NavItem>
           
           <NavbarBrand href="/">
-            <img src={Logo} height="125" width="125" alt="brand" />
+            <img src={Logo} height="100" width="100" alt="brand" />
           </NavbarBrand>
           
           <NavItem>
               <NavLink href="/contact">Contact</NavLink>
           </NavItem>
-
 
           <NavItem>
               <NavLink href="/contact">About</NavLink>

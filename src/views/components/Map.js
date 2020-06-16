@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 
 import ReactMapGL, { Marker } from 'react-map-gl';
 
 import '../../assets/styles/components/my-maps.scss';
+import { CoordsContext } from '../../contexts/CoordsContext';
 
 const Map = () => {
+	const { latitude, longitude, changeCoords } = useContext(CoordsContext);
+	
 	const [viewport, setViewport] = useState({
 		width: '100vw',
 		height: '100vh',
@@ -14,6 +17,7 @@ const Map = () => {
 	  });
 
 	function pos() {
+		console.log("context", latitude, longitude);
 		navigator.geolocation.getCurrentPosition((position) => {
 			setViewport({
 				width: '100vw',
@@ -22,7 +26,8 @@ const Map = () => {
 				longitude: parseFloat(position.coords.longitude.toFixed(5)),
 				zoom: 14
 			});
-		});
+			changeCoords(position.coords.latitude.toFixed(5), position.coords.longitude.toFixed(5));
+		})
 	  }
 	
 	  return (

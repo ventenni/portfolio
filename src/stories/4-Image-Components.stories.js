@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 
 import placeholderImage from '../assets/images/Cygnet 2.jpg';
+import placeholderImage2 from '../assets/images/DSC_4780.jpg';
 
 // Page Structure
 import Section from '../views/layouts/Section';
@@ -18,6 +19,30 @@ import ProfileCardV1 from '../views/components/ProfileCardV1';
 import ProfileCardV2 from '../views/components/ProfileCardV2';
 import ProfileCoverCard from '../views/components/ProfileCoverCard';
 import SquareImage from "../views/components/SquareImage";
+import ImageModalGallery from '../views/components/ImageModalGallery';
+
+const modalGalleryData = [
+    {
+        image: placeholderImage,
+        title: "placeholder 1"
+    },
+    {
+        image: placeholderImage2,
+        title: "placeholder 2"
+    },
+    {
+        image: placeholderImage,
+        title: "placeholder 1"
+    },
+    {
+        image: placeholderImage2,
+        title: "placeholder 2"
+    },
+    {
+        image: placeholderImage,
+        title: "placeholder 1"
+    }
+]
 
 export default {
     title: "Image Components"
@@ -70,8 +95,15 @@ const CarouselOneColumn = () => {
     )
 }
 
+const ModalGallery = () => {
+    return (
+        <ImageModalGallery items={modalGalleryData} />
+    )
+}
+
 export const carousel = () => <CarouselOneColumn />
 export const modal = () => <ImageModal image={placeholderImage} />;
+export const modalGallery = () => <ModalGallery />
 export const profileCardV1 = () => <ThreeProfileCard />;
 export const profileCardV2 = () => <TwoProfileCard />;
 export const profileCoverCard = () => <ThreeColumnProfileCoverCard />;

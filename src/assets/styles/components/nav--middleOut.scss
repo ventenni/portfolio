@@ -1,3 +1,4 @@
+@import '../base/bootstrap.scss';
 @import '../base/mixins.scss';
 @import '../base/typography.scss';
 @import '../base/variables.scss';
@@ -12,6 +13,26 @@
     background-color: $white;
     z-index: 100;
 
+    &.navbar {
+        @include media-breakpoint-down(md) {
+            justify-content: flex-end;
+
+            .navbar-toggler {
+                .hamburger {
+                    &.open {
+                        transform: rotate(90deg);
+                        transition: transform 0.5s;
+                    }
+
+                    &.closed {
+                        transform: rotate(0deg);
+                        transition: transform 0.5s;
+                    }
+                }
+            }
+        }
+    }
+
     .navbar-nav {
         margin: 0 auto;
         width: 100%;
@@ -19,6 +40,18 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+
+            .navbar-brand {
+                order: 1;
+            }
+
+            .nav-item {
+                order: 2;
+            }
+        }
     }
 
     .navbar-nav {

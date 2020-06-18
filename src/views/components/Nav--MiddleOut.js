@@ -22,10 +22,14 @@ const SiteNav = (props) => {
 
   const toggle = () => setIsOpen(!isOpen);
 
+  let icon = isOpen ? 'open' : 'closed';
+
   return (
     <Navbar light expand="md" className="nav-middle-out">
 
-      <NavbarToggler onClick={toggle} />
+      <NavbarToggler onClick={toggle} > 
+        <div className={`hamburger ${icon}`}>|</div> 
+      </NavbarToggler>
 
       <Collapse isOpen={isOpen} navbar>
 

@@ -101,7 +101,7 @@ const ModalGallery = () => {
     )
 }
 
-export const carousel = () => <CarouselOneColumn />
+// export const carousel = () => <CarouselOneColumn />
 export const modal = () => <ImageModal image={placeholderImage} />;
 export const modalGallery = () => <ModalGallery />
 export const profileCardV1 = () => <ThreeProfileCard />;

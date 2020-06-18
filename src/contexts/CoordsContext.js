@@ -4,14 +4,15 @@ export const CoordsContext = createContext();
 
 const CoordsContextProvider = (props) => {
 	const [coords, setCoords] = useState({
-		latitude: 53.2734,
-		longitude: -7.77832031
+		latitudeContext: 53.2734,
+		longitudeContext: -7.77832031
 	})
 
 	const changeCoords = (lat, long) => {
 		console.log("context coords", lat, long);
-		setCoords({longitude: long, latitude: lat});
+		setCoords({longitudeContext: long, latitudeContext: lat});
 	}
+	
 	return (
 		<CoordsContext.Provider value={{...coords, changeCoords}}>
 			{props.children}

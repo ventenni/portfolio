@@ -6,18 +6,18 @@ import '../../assets/styles/components/my-maps.scss';
 import { CoordsContext } from '../../contexts/CoordsContext';
 
 const Map = () => {
-	const { latitude, longitude, changeCoords } = useContext(CoordsContext);
+	const { latitudeContext, longitudeContext, changeCoords } = useContext(CoordsContext);
 	
 	const [viewport, setViewport] = useState({
 		width: '100vw',
 		height: '100vh',
-		latitude: 37.7577,
-		longitude: -122.4376,
+		latitude: latitudeContext,
+		longitude: longitudeContext,
 		zoom: 8
 	  });
 
 	function pos() {
-		console.log("context", latitude, longitude);
+		console.log("context", latitudeContext, longitudeContext);
 		navigator.geolocation.getCurrentPosition((position) => {
 			setViewport({
 				width: '100vw',

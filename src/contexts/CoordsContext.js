@@ -19,5 +19,5 @@ const CoordsContextProvider = (props) => {
 		</CoordsContext.Provider>
 	);
 }
- 
+
 export default CoordsContextProvider;

@@ -21,7 +21,7 @@ const Activities = () => {
 			date: "8th June, 2019"
 		},
 		{
-			activity: "Brent used toilet paper",
+			activity: "Brent had lunch",
 			location: {
 				address: "Schansend 1, 1509 AW Zaandam",
 				city: "Amsterdam",
@@ -32,7 +32,7 @@ const Activities = () => {
 			date: "8th June, 2019"
 		},
 		{
-			activity: "Brent sent food back for the fourth time this week",
+			activity: "Brent went for a drive",
 			location: {
 				address: "Schansend 1, 1509 AW Zaandam",
 				city: "Amsterdam",

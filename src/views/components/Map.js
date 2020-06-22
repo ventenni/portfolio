@@ -6,7 +6,7 @@ import '../../assets/styles/components/my-maps.scss';
 import { CoordsContext } from '../../contexts/CoordsContext';
 
 const Map = () => {
-	const { latitudeContext, longitudeContext, changeCoords } = useContext(CoordsContext);
+	let { latitudeContext, longitudeContext, changeCoords } = useContext(CoordsContext);
 	
 	const [viewport, setViewport] = useState({
 		width: '100vw',

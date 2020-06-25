@@ -1,12 +1,12 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
-import React from 'react';
+// import React from 'react';
 
-// Components
-import CountUp from '../views/components/CountUp';
+// // Components
+// import CountUp from '../views/components/CountUp';
 
-export default {
-    title: "Animated Components"
-};
+// export default {
+//     title: "Animated Components"
+// };
 
-export const countUp = () => <CountUp />;
+// export const countUp = () => <CountUp />;

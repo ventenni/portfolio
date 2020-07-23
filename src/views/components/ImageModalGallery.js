@@ -17,7 +17,7 @@ const ImageModalGallery = (props) => {
 			{props.items.map((item, index) => {
 				return (
 					<div key={uuidv4()} style={{width: width}}>
-						<ImageModal image={item.image} />
+						<ImageModal image={item.image} title={item.title} />
 					</div>
 				)
 			})

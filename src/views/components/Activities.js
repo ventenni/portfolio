@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 
 // Component
-
+import ActivityItem from './ActivityItem';
 
 // Style
 import '../../assets/styles/components/activity.scss';
-import ActivityItem from './ActivityItem';
 
 const Activities = () => {
 	const [activity, setActivity] = useState([
@@ -21,7 +20,7 @@ const Activities = () => {
 			date: "8th June, 2019"
 		},
 		{
-			activity: "Brent used toilet paper",
+			activity: "Brent had lunch",
 			location: {
 				address: "Schansend 1, 1509 AW Zaandam",
 				city: "Amsterdam",
@@ -32,7 +31,7 @@ const Activities = () => {
 			date: "8th June, 2019"
 		},
 		{
-			activity: "Brent sent food back for the fourth time this week",
+			activity: "Brent went for a drive",
 			location: {
 				address: "Schansend 1, 1509 AW Zaandam",
 				city: "Amsterdam",
@@ -42,7 +41,8 @@ const Activities = () => {
 			},
 			date: "8th June, 2019"
 		}
-	])
+	]);
+
 	return (
 		<div className="activity">
 			<div className="activity__title">
@@ -51,12 +51,17 @@ const Activities = () => {
 			<div className="activity__items">
 				{activity.map((item, index) => {
 					return (
-						<ActivityItem activity={item.activity} location={item.location} date={item.date} key={index} />
+						<ActivityItem 
+							activity={item.activity} 
+							location={item.location} 
+							date={item.date} 
+							key={index} 
+						/>
 					)
 				})}
 			</div>
 		</div>
 	);
 }
- 
+
 export default Activities;

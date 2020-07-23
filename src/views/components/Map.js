@@ -1,19 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 
+// Libraries
 import ReactMapGL, { Marker } from 'react-map-gl';
 
+// Context
+import { CoordsContext } from '../../contexts/CoordsContext';
+
+// Styles
 import '../../assets/styles/components/my-maps.scss';
 
 const Map = () => {
+	const { latitudeContext, longitudeContext, changeCoords } = useContext(CoordsContext);
+	
 	const [viewport, setViewport] = useState({
 		width: '100vw',
 		height: '100vh',
-		latitude: 37.7577,
-		longitude: -122.4376,
+		latitude: latitudeContext,
+		longitude: longitudeContext,
 		zoom: 8
-	  });
+	});
+
+	useEffect(() => {
+		console.log("context updated", latitudeContext, longitudeContext);
+		setViewport({
+			width: '100vw',
+			height: '100vh',
+			latitude: parseFloat(latitudeContext),
+			longitude: parseFloat(longitudeContext),
+			zoom: 14
+		});
+	}, [latitudeContext, longitudeContext]);
 
 	function pos() {
+		console.log("context", latitudeContext, longitudeContext);
 		navigator.geolocation.getCurrentPosition((position) => {
 			setViewport({
 				width: '100vw',
@@ -22,7 +41,8 @@ const Map = () => {
 				longitude: parseFloat(position.coords.longitude.toFixed(5)),
 				zoom: 14
 			});
-		});
+			changeCoords(position.coords.latitude.toFixed(5), position.coords.longitude.toFixed(5));
+		})
 	  }
 	
 	  return (

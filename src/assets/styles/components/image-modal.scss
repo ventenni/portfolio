@@ -8,3 +8,36 @@
 		}
 	}
 }
+
+.modal {
+
+	.modal-dialog {
+		max-width: 45%;
+	}
+
+	.modal-content {
+		background-color: transparent;
+		border: none;
+
+		.modal-body {
+			padding: 0 !important;
+		}
+
+		.modal-header {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			border-bottom: none;
+			color: white;
+			font-family: cursive;
+
+			.modal-title {
+				margin: 0 auto;
+			}
+
+			.close {
+				display: none;
+			}
+		}
+	}
+}

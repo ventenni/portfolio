@@ -7,34 +7,34 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="drawing.svg"
-   inkscape:version="1.1-dev (bc69992, 2020-04-15)"
-   id="svg8"
+   width="144.63095mm"
+   height="137.07143mm"
+   viewBox="0 0 144.63095 137.07143"
    version="1.1"
-   viewBox="0 0 210 297"
-   height="297mm"
-   width="210mm">
+   id="svg8"
+   inkscape:version="1.1-dev (bc69992, 2020-04-15)"
+   sodipodi:docname="drawing.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
-     inkscape:window-maximized="0"
-     inkscape:window-y="23"
-     inkscape:window-x="0"
-     inkscape:window-height="300"
-     inkscape:window-width="300"
-     inkscape:snap-text-baseline="false"
-     showgrid="false"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="617.02517"
-     inkscape:cx="248.76287"
-     inkscape:zoom="0.46098647"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="none"
+     id="base"
      pagecolor="none"
-     id="base" />
+     bordercolor="none"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.46098647"
+     inkscape:cx="110.65264"
+     inkscape:cy="333.20065"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:snap-text-baseline="false"
+     inkscape:window-width="1440"
+     inkscape:window-height="855"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -48,23 +48,24 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
+     transform="translate(-36.541664,-75.095238)"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     id="layer1">
     <ellipse
-       ry="68.035713"
-       rx="71.815475"
-       cy="143.63095"
-       cx="108.85714"
+       style="fill:none;stroke:#000000;stroke-width:1"
        id="path14"
-       style="fill:none;stroke-width:1;stroke:#000000" />
+       cx="108.85714"
+       cy="143.63095"
+       rx="71.815475"
+       ry="68.035713" />
     <path
-       id="path16"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 88.446429,176.89286 v -63.5 L 128.5119,174.625 127.75595,112.6369"
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       id="path16" />
     <path
-       id="path18"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 72.571427,140.60714 H 143.63095"
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       id="path18" />
   </g>
 </svg>

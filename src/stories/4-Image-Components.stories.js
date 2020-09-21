@@ -2,8 +2,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React from 'react';
 
+// Mock Data
 import placeholderImage from '../assets/images/Cygnet 2.jpg';
 import placeholderImage2 from '../assets/images/DSC_4780.jpg';
+import ImageModalGalleryData from '../views/data/imageModalGalleryData.json';
 
 // Page Structure
 import Section from '../views/layouts/Section';
@@ -89,11 +91,11 @@ const ThreeColumnProfileCoverCard = () => {
     )
 }
 
-const CarouselOneColumn = () => {
-    return (
-        <OneColumn one={<Carousel />} />
-    )
-}
+// const CarouselOneColumn = () => {
+//     return (
+//         <OneColumn one={<Carousel />} />
+//     )
+// }
 
 const ModalGallery = () => {
     return (

@@ -2,9 +2,26 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	padding: .5rem;
 	max-width: 500px;
+	background: #ffffff;
+	border: 1px solid #000000;
+
+	&__image {
+		img {
+			border-radius: 50px;
+		}
+	}
 
 	&__title {
 		padding-left: 2rem;
+
+		&__contacts {
+			p {
+				display: inline-block;
+				margin-right: 10px;
+				margin-bottom: 0;
+			}
+		}
 	}
 }

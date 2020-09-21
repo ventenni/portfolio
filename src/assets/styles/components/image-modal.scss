@@ -1,10 +1,14 @@
 .image-modal {
-	max-width: 200px;
-	height: auto;
 	
 	&__image {
 		&:hover {
 			cursor: pointer;
+		}
+
+		img {
+			width: 100px;
+			height: 100px;
+			object-position: center;
 		}
 	}
 }

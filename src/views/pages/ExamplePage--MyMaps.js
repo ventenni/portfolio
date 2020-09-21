@@ -16,7 +16,9 @@ const MyMapsExmaplePage = () => {
 		<div className="my-maps-page">
 			<CoordsContextProvider>
 				<div className="left-column">
-					<ProfileImage image={"https://via.placeholder.com/100"} name={"Brenton Milnsie"} />
+					<ProfileImage 
+					image={"https://via.placeholder.com/100"} 
+					name={"Brenton Milnsie"} />
 					<Search />
 					<Activities />
 				</div>

@@ -1,7 +1,8 @@
 import React, { useState, useContext, useEffect } from 'react';
 
 // Libraries
-import ReactMapGL, { Marker } from 'react-map-gl';
+// https://github.com/visgl/react-map-gl
+import ReactMapGL, { Marker, CanvasOverlay } from 'react-map-gl';
 
 // Context
 import { CoordsContext } from '../../contexts/CoordsContext';
@@ -49,8 +50,8 @@ const Map = () => {
 		<div className="map">
 			<div className="map__get-location">
 				<button onClick={() => { pos() }}>Get Current Location</button>
-				<div>{`Latitude ${viewport.latitude}`}</div>
-				<div>{`Longitude: ${viewport.longitude}`}</div>
+				<div>{`Latitude ${parseFloat(viewport.latitude).toFixed(5)}`}</div>
+				<div>{`Longitude: ${parseFloat(viewport.longitude).toFixed(5)}`}</div>
 			</div>
 
 			<ReactMapGL

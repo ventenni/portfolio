@@ -1,0 +1,58 @@
+.vnt-fifty-fifty {
+
+	.vrtp-general-copy {
+		max-width: 50%;
+		padding: 5.4em 5em;
+		background: $white;		
+
+		> div {
+			max-width: 100rem;
+		}
+
+		h4:first-child {
+			margin-bottom: 1.7em;
+
+		}
+
+		h5 {
+			color: $black;
+			font-size: em(20px);
+			font-weight: bold;
+			line-height: em(32px, 20px);
+		}
+
+		p + h5 {
+			margin-top: 2.1em;
+		}
+
+		h5 + ul {
+			margin-top: -0.8em;
+		}
+
+		ul {
+			padding-left: 2em;
+
+			li {
+				margin-bottom: 0.5em;
+				
+
+				&:before {
+					left: -0.9em;
+				}
+			}
+		}
+
+		.button-container {
+			display: flex;
+		}
+
+		.btn {
+			min-width: rem(185px);
+		}
+	}
+
+	.centered-image {
+		background-position: 50% 50%;
+		background-size: cover;
+	}
+}

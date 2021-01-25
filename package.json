@@ -36,7 +36,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "start": "react-scripts start",
-    "storybook": "start-storybook -p 9009 -s ./public,./storybook-static,./out",
+    "storybook": "start-storybook -p 9009 -s ./public",
     "test": "react-scripts test"
   },
   "eslintConfig": {
@@ -55,12 +55,12 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.3.13",
-    "@storybook/addon-links": "^5.3.13",
-    "@storybook/addons": "^5.3.13",
-    "@storybook/preset-create-react-app": "^1.5.2",
-    "@storybook/react": "^5.3.13",
-    "@storybook/storybook-deployer": "^2.8.5",
+    "@storybook/addon-actions": "^6.1.15",
+    "@storybook/addon-links": "^6.1.15",
+    "@storybook/addons": "^6.1.15",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.15",
+    "@storybook/storybook-deployer": "^2.8.7",
     "css-loader": "^3.5.2",
     "file-loader": "^6.0.0",
     "gh-pages": "^2.2.0",

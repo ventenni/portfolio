@@ -16,7 +16,7 @@ import ThreeColumn from '../views/layouts/ThreeColumn';
 
 // Components
 // import Carousel from "../views/components/Carousel";
-import FiftyFifty from './../views/components/FiftyFifty';
+import FiftyFifty from '../views/components/FiftyFifty';
 import ImageModal from "../views/components/ImageModal";
 import ImageModalGallery from '../views/components/ImageModalGallery';
 import ProfileCardV1 from '../views/components/ProfileCardV1';
@@ -98,17 +98,7 @@ const ModalGallery = () => {
     )
 }
 
-const FiftyFiftyComponent = () => {
-    return <FiftyFifty 
-        heading="Placeholder Heading"
-        copy="Tempor ut laboris est cupidatat irure in excepteur proident duis sint culpa enim anim. 
-        Qui non do magna amet Lorem eiusmod adipisicing. Nulla do consectetur occaecat culpa. Ipsum occaecat ex elit Lorem amet. 
-        Aute ullamco consequat ipsum eiusmod amet duis sunt esse. Ipsum proident id est ea qui id sunt. Occaecat aute sunt excepteur eu cillum cillum nostrud culpa velit."
-        image={placeholderImage2} />
-}
-
-// export const carousel = () => <CarouselOneColumn />
-export const fifty = () => <FiftyFiftyComponent />;
+export const fiftyFifty = () => <FiftyFifty />;
 export const modal = () => <ImageModal image={placeholderImage} />;
 export const modalGallery = () => <ModalGallery />;
 export const profileCardV1 = () => <ThreeProfileCard />;

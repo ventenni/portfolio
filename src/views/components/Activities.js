@@ -7,7 +7,9 @@ import ActivityItem from './ActivityItem';
 import '../../assets/styles/components/activity.scss';
 
 const Activities = () => {
-	const [activity, setActivity] = useState([
+	const [activity, setActivity] = useState();
+
+	setActivity([
 		{
 			activity: "Brent made clogs",
 			location: {

@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 
 // Libraries
 // https://github.com/visgl/react-map-gl
-import ReactMapGL, { Marker, CanvasOverlay } from 'react-map-gl';
+import ReactMapGL, { Marker } from 'react-map-gl';
 
 // Context
 import { CoordsContext } from '../../contexts/CoordsContext';

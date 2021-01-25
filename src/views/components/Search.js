@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,14 +8,14 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import '../../assets/styles/components/search.scss';
 
 // Context
-import { CoordsContext } from '../../contexts/CoordsContext';
+// import { CoordsContext } from '../../contexts/CoordsContext';
 
 const Search = () => {
 
-	const { 
-		latitudeContext, 
-		longitudeContext,
-		changeCoords } = useContext(CoordsContext);
+	// const { 
+	// 	latitudeContext, 
+	// 	longitudeContext,
+	// 	changeCoords } = useContext(CoordsContext);
 
 	const placesUrl = () => {
 		console.log("places url");

@@ -2,7 +2,7 @@ import React from 'react';
 
 import Hero from '../views/components/Hero';
 
-import placeholderImage2 from '../assets/images/DSC_4780.jpg';
+// import placeholderImage2 from '../assets/images/DSC_4780.jpg';
 
 export default {
     title: "Hero Images"

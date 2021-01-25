@@ -50,7 +50,35 @@ const ExamplePage1 = () => {
 		]
 	);
 
-	const [generalCopyState, setGeneralCopyState] = useState(generalCopyData);
+		setImageModalGalleryState(
+		{
+			"image": placeholderImage
+		},
+		{
+			"image": placeholderImage
+		},
+		{
+			"image": placeholderImage
+		},
+		{
+			"image": placeholderImage
+		},
+		{
+			"image": placeholderImage
+		},
+		{
+			"image": placeholderImage
+		},
+		{
+			"image": placeholderImage
+		},
+		{
+			"image": placeholderImage
+		});
+
+	const [generalCopyState, setGeneralCopyState] = useState();
+
+	setGeneralCopyState(generalCopyData);
 
 	console.log(generalCopyState);
 	return (

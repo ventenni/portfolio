@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+// Context
+import { CoordsContext } from '../../contexts/CoordsContext';
 
 // Libraries
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,6 +11,7 @@ import { faMapMarker } from '@fortawesome/free-solid-svg-icons';
 import '../../assets/styles/components/activity-item.scss';
 
 const ActivityItem = ({activity, location, date}) => {
+	const { changeCoords } = useContext(CoordsContext);
 	return (
 		<div className="activity-item">
 
@@ -26,7 +30,7 @@ const ActivityItem = ({activity, location, date}) => {
 			</div>
 
 			<div className="activity-item__button">
-				<button className="btn" onClick={() => alert(`${location.latitude}, ${location.longitude}`)}>
+				<button className="btn" onClick={() => changeCoords(location.latitude, location.longitude)}>
 					<FontAwesomeIcon icon={faMapMarker} size="2x" />
 				</button>
 			</div>

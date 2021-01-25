@@ -8,21 +8,25 @@ import Search from '../components/Search';
 
 // Styles
 import '../../assets/styles/components/my-maps.scss';
+import CoordsContextProvider from '../../contexts/CoordsContext';
 
 
 const MyMapsExmaplePage = () => {
 	return (
 		<div className="my-maps-page">
-			<div className="left-column">
-				<ProfileImage image={"https://via.placeholder.com/100"} name={"Brenton Milnsie"} />
-				<Search />
-				<Activities />
-			</div>
+			<CoordsContextProvider>
+				<div className="left-column">
+					<ProfileImage 
+					image={"https://via.placeholder.com/100"} 
+					name={"Brenton Milnsie"} />
+					<Search />
+					<Activities />
+				</div>
 
-			<div className="right-column">
-				<Map />
-			</div>
-
+				<div className="right-column">
+					<Map />
+				</div>
+			</CoordsContextProvider>
 		</div>
 	);
 }

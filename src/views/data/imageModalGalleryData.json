@@ -1,17 +1,30 @@
 [
-	{
-		"image": "../../assets/images/Cygnet 2.jpg"
-	},
-	{
-		"image": "../../assets/images/Cygnet 2.jpg"
-	},
-	{
-		"image": "../../assets/images/Cygnet 2.jpg"
-	},
-	{
-		"image": "../../assets/images/Cygnet 2.jpg"
-	},
-	{
-		"image": "../../assets/images/Cygnet 2.jpg"
+    {
+        "image": "../../assets/images/Cygnet 2.jpg",
+        "title": "placeholder 1"
+    },
+    {
+        "image": "../../assets/images/Cygnet 2.jpg",
+        "title": "placeholder 1"
+    },
+    {
+        "image": "../../assets/images/Cygnet 2.jpg",
+        "title": "placeholder 1"
+    },
+    {
+        "image": "../../assets/images/Cygnet 2.jpg",
+        "title": "placeholder 1"
+    },
+    {
+        "image": "../../assets/images/Cygnet 2.jpg",
+        "title": "placeholder 1"
+    },
+    {
+        "image": "../../assets/images/Cygnet 2.jpg",
+        "title": "placeholder 1"
+    },
+    {
+        "image": "../../assets/images/Cygnet 2.jpg",
+        "title": "placeholder 1"
 	}
 ]

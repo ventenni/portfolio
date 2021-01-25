@@ -1,9 +1,13 @@
 .image-modal-gallery {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
 
-	.image-modal {
-		flex: 1 1 20%;
+	&__images {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+
+		.image-modal {
+			flex: 0 1 25%;
+		}
 	}
 }

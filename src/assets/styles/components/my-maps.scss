@@ -4,13 +4,16 @@
 	grid-template-rows: 100vh;
 
 	.left-column {
+		position: absolute;
 		grid-column: 1/2;
 		grid-row: 1/2;
+		z-index: 99;
 	}
 
 	.right-column {
-		grid-column: 2/3;
+		grid-column: 1/3;
 		grid-row: 1/2;
+		z-index: 2;
 	}
 }
 
@@ -20,6 +23,8 @@
 
 	&__get-location {
 		position: absolute;
+		top: 0;
+		right: 0;
 		margin-left: 1rem;
 		padding: 1rem;
 		background-color: #ffffff;

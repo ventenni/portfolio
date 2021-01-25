@@ -1,0 +1,16 @@
+/* SCSS HEX */
+$dark-sky-blue: #79bcd6ff;
+$gray-web: #7f8088ff;
+$slate-gray: #6b7a8cff;
+$beaver: #9e8067ff;
+$prussian-blue: #113045ff;
+
+.welcome-page {
+	width: 100%;
+	text-align: center;
+
+	&__disclaimer {
+		font-size: small;
+		font-style: italic;
+	}
+}

@@ -4,7 +4,7 @@ import React from 'react';
 import ImageModal from './ImageModal';
 
 // Libraries
-import { v4 as uuidv4 } from 'uuid';
+// import { v4 as uuidv4 } from 'uuid';
 
 // Styles
 import '../../assets/styles/components/image-modal-gallery.scss';
@@ -14,14 +14,16 @@ const ImageModalGallery = (props) => {
 	console.log(width);
 	return (
 		<div className="image-modal-gallery">
-			{props.items.map((item, index) => {
-				return (
-					<div key={uuidv4()} style={{width: width}}>
-						<ImageModal image={item.image} />
-					</div>
-				)
-			})
-		}
+			<div className="image-modal-gallery__images">
+				{props.items.map((item, index) => {
+					return (
+						<ImageModal image={item.image} title={item.title} />
+					)
+				})
+			}
+			</div>
+
+			<h4>166 Images Posted</h4>
 		</div>
 	);
 }

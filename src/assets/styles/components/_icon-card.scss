@@ -1,0 +1,213 @@
+/*==================================================
+=            Component - Icon Card - CH            =
+==================================================*/
+
+.vrtp-icon-card {
+	padding: rem(40px);
+	@include transition(box-shadow);
+	border: 0;
+	border-radius: 0;
+	box-shadow: 0 9px 18px 0 rgba($cl__black, 0.06);
+
+	&:hover {
+		box-shadow: 0 12px 23px 0 rgba($cl__black, 0.12);
+	}
+
+	&.vrtp-icon-card--no-cta {
+		box-shadow: none;
+	}
+
+	.card-body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0;
+
+		&:last-child {
+
+			.card-text {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.card-title, .card-text {
+		margin-bottom: em(28px, 24px);
+		@include font(24px, 34px);
+	}
+
+	.card-title {
+		font-weight: 400;
+	}
+
+	.card-text {
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	&__image {
+		position: relative;
+		width: rem(120px);
+		height: rem(120px);
+		margin: 0 auto em(40px);
+
+		.card-img {
+			@include va();
+			width: auto;
+			max-width: 100%;
+			max-height: 90%;
+			border-radius: 0;
+		}
+	}
+
+	// Theme-specific styles.
+	&--light {
+		background-color: $cl__white;
+		color: $cl__blue--light;
+
+		.card-title, .card-text {
+			color: $cl__blue--light;
+		}
+	}
+
+	&--dark {
+		background-color: $cl__blue--dark;
+		color: $cl__white;
+
+		.card-title, .card-text {
+			color: $cl__white;
+		}
+	}
+	// Responsive media queries.
+	@media (min-width: 1460px) and (max-width: 1630px) {
+
+		.btn {
+			padding: rem(23px 13px);
+		}
+	}
+
+	@include screen(xl, xl) {
+		padding: rem(30px);
+
+		.btn-outline--has-line {
+			text-align: center;
+
+			&:after {
+				display: none;
+				content: none;
+			}
+
+			.vrtp-icon {
+				display: none;
+			}
+		}
+	}
+
+	@include max-screen(xl) {
+
+		.cart-title, .card-text {
+			font-size: em(20.8px);
+		}
+	}
+
+	@include max-screen(lg) {
+		margin-bottom: rem(30px);
+	}
+
+	@include screen(md, md) {
+		padding: rem(30px);
+	}
+
+	@include max-screen(md) {
+
+		&__image {
+			width: rem(100px);
+			height: rem(100px);
+		}
+	}
+
+	@include max-screen(sm) {
+
+		&.vrtp-icon-card--no-cta {
+
+			.card-title {
+				@include font(18px, 28px, 400);
+			}
+
+			.card-text {
+				@include font(20px, 32px);
+			}
+		}
+
+		&:not(.vrtp-icon-card--no-cta) {
+
+			.card-body {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+			}
+
+			.card-img,
+			.card-title, .card-text {
+				display: block;
+				position: relative;
+				margin: 0;
+			}
+
+			.card-title, .card-text {
+				flex: 0 0 75%;
+				order: 2;
+				max-width: 75%;
+				padding-left: em(18px, 18px);
+				@include font(18px, 25px);
+				text-align: left;
+			}
+
+			.card-title {
+
+				span {
+					@include va(absolute);
+				}
+			}
+
+			.card-img {
+				max-height: 100%;
+			}
+
+			.vrtp-icon-card__image {
+				flex: 0 0 25%;
+				order: 1;
+				width: rem(50px);
+				max-width: rem(50px);
+				height: rem(50px);
+				margin: 0;
+			}
+
+			.btn {
+				flex: 0 0 100%;
+				order: 3;
+				margin-top: rem(23px);
+			}
+		}
+	}
+
+	@include max-screen(xs) {
+		margin-bottom: rem(10px);
+	}
+
+	@include max-screen(374px) {
+		.btn-outline--has-line {
+			text-align: center;
+
+			&:after {
+				display: none;
+				content: none;
+			}
+
+			.vrtp-icon {
+				display: none;
+			}
+		}
+	}
+}

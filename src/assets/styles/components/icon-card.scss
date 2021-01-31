@@ -1,0 +1,20 @@
+.vnt-icon-card {
+	padding: 1em;
+
+	&__heading {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: .5em;
+
+		.svg-inline--fa {
+			width: 4rem;
+			height: 4rem;
+		}
+
+		h3 {
+			margin-bottom: 0;
+			margin-left: .5em;
+		}
+	}
+}

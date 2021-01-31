@@ -1,8 +1,32 @@
 
+// Icons //
+
+/// Default icon file path.
+/// @type String
+$icon-path: '/icons/';
+
+/// Default icon file extension.
+/// @type String
+$icon-ext: '.svg';
+
+
 @mixin transition($args...) {
 	-webkit-transition: $args;
 	-moz-transition: $args;
 	-ms-transition: $args;
 	-o-transition: $args;
 	transition: $args;
-  }
+}
+
+
+/// Icon Mixin.
+/// Simplifies process of adding multiple icons with the same file path and extension.
+/// Generally only require passing in the icon file name, however the extension and path can be overridden if neeeded.
+/// The file name of the icon to be used.
+/// [$icon-ext] - The file extension of the icon.
+/// [$icon-path] - The file path of the icon.
+/// The default file extension.
+/// $icon-path - The default file path.
+@mixin vnt-icon($icon) {
+	background-image: url($icon-path + $icon + $icon-ext);
+}

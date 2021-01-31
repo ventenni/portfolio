@@ -1,10 +1,6 @@
 import React, { useState } from 'react';
 
 // Font Awesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
-
-
 import '../../assets/styles/components/nav--middleOut.scss';
 
 // Reactstrap Components
@@ -27,7 +23,7 @@ const SiteNav = (props) => {
 
   const toggle = () => setIsOpen(!isOpen);
 
-  let icon = isOpen ? 'open' : 'closed';
+  // let icon = isOpen ? 'open' : 'closed';
 
   const navLinks = props.navItems.navLinks;
   const logo = props.navItems.logo;
@@ -37,7 +33,7 @@ const SiteNav = (props) => {
 
       <NavbarToggler onClick={toggle} > 
         {/* <div className={`hamburger ${icon}`}>|</div> */}
-        <FontAwesomeIcon icon={faPlus} className={`hamburger ${icon}`} />
+        {/* <FontAwesomeIcon icon={faPlus} className={`hamburger ${icon}`} /> */}
       </NavbarToggler>
 
       <Collapse isOpen={isOpen} navbar>

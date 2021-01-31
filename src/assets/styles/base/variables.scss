@@ -4,9 +4,22 @@ $white: #ffffff;
 $black: #000000;
 
 $thinker-blue: #3478e5;
-$thinker-off-white: #eaeaea;
+$off-white: #eaeaea;
 
 $mymaps-dark-blue: #104d86;
 $mymaps-light-blue: #2598d8;
 $mymaps-red: #c82e2e;
 $mymaps-green: #197b1d;
+
+
+
+
+// Icons //
+
+/// Default icon file path.
+/// @type String
+$icon-path: './static/icons/';
+
+/// Default icon file extension.
+/// @type String
+$icon-ext: '.svg';

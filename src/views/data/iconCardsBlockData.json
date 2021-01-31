@@ -1,24 +1,24 @@
 {
 	"heading": "Heading Placeholder 1",
-	"copy": "Ut ad laboris occaecat deserunt voluptate id amet consectetur. Adipisicing sint tempor elit elit consectetur tempor in sunt nostrud veniam sunt adipisicing in. Incididunt cillum ad culpa commodo consequat ad dolore do tempor. Sint dolore voluptate tempor commodo Lorem consequat. Anim deserunt ex aute esse quis magna nisi aute exercitation fugiat. Officia sit culpa ullamco cillum aliqua sunt velit sit aliquip nostrud pariatur adipisicing sit .",
+	"copy": "Ut ad laboris occaecat deserunt voluptate id amet consectetur. Adipisicing sint tempor elit elit consectetur. <br /> <br /> Incididunt cillum ad culpa commodo consequatelit elit consectetur tempor in sunt nostrud veniam sunt adipisicing in. Incididunt cillum ad culpa commodo consequat",
 	"iconCards": [
 		{
-			"icon": "placeholder",
+			"icon": "linkedin",
 			"heading": "Card Heading 1",
 			"copy": "Elit cillum veniam aliquip do voluptate Lorem magna nostrud. Fugiat nostrud ipsum sint sint ad eu sunt irure. Ex officia labore."
 		},
 		{
-			"icon": "placeholder",
+			"icon": "500px",
 			"heading": "Card Heading 2",
 			"copy": "Elit cillum veniam aliquip do voluptate Lorem magna nostrud. Fugiat nostrud ipsum sint sint ad eu sunt irure. Ex officia labore."
 		},
 		{
-			"icon": "placeholder",
+			"icon": "500px",
 			"heading": "Card Heading 3",
 			"copy": "Elit cillum veniam aliquip do voluptate Lorem magna nostrud. Fugiat nostrud ipsum sint sint ad eu sunt irure. Ex officia labore."
 		},
 		{
-			"icon": "placeholder",
+			"icon": "500px",
 			"heading": "Card Heading 4",
 			"copy": "Elit cillum veniam aliquip do voluptate Lorem magna nostrud. Fugiat nostrud ipsum sint sint ad eu sunt irure. Ex officia labore."
 		}

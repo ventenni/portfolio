@@ -1,11 +1,13 @@
 import React from 'react';
 
-import IconCard from '../views/components/IconCard';
+
+// Icon Cards Block
 import IconCardsBlock from '../views/components/IconCardsBlock';
+import IconCardsBlockData from './../views/data/iconCardsBlockData.json';
 
 export default {
-    title: "Icons"
+    title: "Icon Components"
 };
 
-export const iconCard = () => <IconCard />;
-export const iconCardsBlock = () => <IconCardsBlock />
+
+export const iconCardsBlock = () => <IconCardsBlock data={IconCardsBlockData} />;

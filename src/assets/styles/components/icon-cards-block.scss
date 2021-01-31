@@ -1,26 +1,47 @@
 .vnt-icon-cards-block {
-	padding: 1em;
+	padding: 1.5em !important;
 	background: #eaeaea;
 	border-radius: 10px;
+	box-shadow: 0px 0px 5px 5px rgba(#000, .35);
+
+	.row {
+		align-items: center;
+
+		@media screen and (max-width: 600px) {
+			margin: 0 auto;
+		}
+	}
 
 	&__body {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+
+		@media screen and (max-width: 600px) {
+			padding: 0 !important;
+		}
+
+		&__heading {
+			margin-bottom: .5em;
+		}
 	}
 
 	&__cards {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		padding: 0 !important;
 
 		.vnt-icon-card {
-			padding: 1em 2em;
-			flex: 1 0 50%;
+			flex: 1 0 48%;
 
 			@media screen and (max-width: 700px) {
 				padding: 1em 0;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
 			}
 		}
 	}

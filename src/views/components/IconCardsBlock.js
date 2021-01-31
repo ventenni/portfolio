@@ -9,28 +9,25 @@ import { Container, Row, Col } from 'react-bootstrap';
 // Sass
 import './../../assets/styles/components/icon-cards-block.scss';
 
-// Dummy Data
-import data from './../data/iconCardsBlockData.json';
+const IconCards = ({ data }) => {
 
-const IconCards = () => {
+	const { heading, copy, iconCards } = data;
 
 	return (
 		<Container className="vnt-icon-cards-block">
 			<Row>
 
 				<Col xs={12} lg={4} className="vnt-icon-cards-block__body">
-					<h1>Heading Placeholder</h1>
+					<h1 className="vnt-icon-cards-block__body__heading">{heading}</h1>
 
-					<p>
-					Deserunt exercitation amet elit duis ipsum minim quis 
-					fugiat occaecat. Dolore cupidatat tempor ipsum amet adipisicing laborum amet
-					</p>
+
+					<div dangerouslySetInnerHTML={{__html: copy}} />
 
 				</Col>
 
 				<Col xs={12} lg={8} className="vnt-icon-cards-block__cards">
 				{
-					data.iconCards.map(item => <IconCard data={item} />)
+					iconCards.map((item, index) => <IconCard data={item} key={index} />)
 				}
 				</Col>
 

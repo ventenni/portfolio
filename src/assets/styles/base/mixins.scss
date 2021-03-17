@@ -3,7 +3,7 @@
 
 /// Default icon file path.
 /// @type String
-$icon-path: '/static/media/';
+$icon-path: '/static/media/icons/';
 
 /// Default icon file extension.
 /// @type String
@@ -28,5 +28,5 @@ $icon-ext: '.svg';
 /// The default file extension.
 /// $icon-path - The default file path.
 @mixin vnt-icon($icon) {
-	background-image: url($icon-path + $icon + $icon-ext);
+	background-image: url("/static/media/" + $icon + ".svg");
 }

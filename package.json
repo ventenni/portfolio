@@ -25,13 +25,13 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "build-storybook": "build-storybook -c .storybook -o .out",
+    "build-storybook": "build-storybook -c .storybook -o ./out",
     "deploy": "gh-pages -d build",
     "deploy-storybook": "storybook-to-ghpages",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "start": "react-scripts start",
-    "storybook": "start-storybook -p 9009 -s ./public",
+    "storybook": "start-storybook -p 9009 -s ./public,./out",
     "test": "react-scripts test"
   },
   "eslintConfig": {
@@ -60,6 +60,7 @@
     "file-loader": "^6.0.0",
     "gh-pages": "^2.2.0",
     "style-loader": "^1.1.4",
-    "url-loader": "^4.1.0"
+    "url-loader": "^4.1.0",
+    "webpack-cli": "^4.4.0"
   }
 }

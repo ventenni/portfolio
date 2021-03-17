@@ -11,6 +11,9 @@
 # production
 /build
 .out/
+.out
+out
+public
 out7322/
 *.env
 

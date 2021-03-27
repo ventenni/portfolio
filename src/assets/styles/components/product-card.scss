@@ -1,6 +1,10 @@
 .vnt-product-card {
 	border: none;
 
+	&:hover {
+		text-decoration: none;
+	}
+
 	.card-body {
 		padding-right: 0;
 		padding-left: 0;
@@ -20,6 +24,11 @@
         		background-size: cover;
 				background-position: center;
 			}
+		}
+
+		.card-title,
+		.card-subtitle {
+			color: black;
 		}
 
 		.vnt-product-card__price {

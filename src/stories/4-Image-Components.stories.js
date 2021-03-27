@@ -25,6 +25,8 @@ import ProfileCardV2 from '../views/components/ProfileCardV2';
 import ProfileCoverCard from '../views/components/ProfileCoverCard';
 import SquareImage from "../views/components/SquareImage";
 
+// Data
+import ProductCardData from './../views/data/productCardData.json';
 const modalGalleryData = [
 	{
 		image: placeholderImage,
@@ -102,9 +104,9 @@ const ModalGallery = () => {
 const ThreeColumnProductCard = () => {
 	return (
 		<ThreeColumn
-		one={<ProductCard />}
-		two={<ProductCard />}
-		three={<ProductCard />}
+		one={<ProductCard data={ProductCardData} />}
+		two={<ProductCard data={ProductCardData} />}
+		three={<ProductCard data={ProductCardData} />}
 		/>
 	)
 }

@@ -19,57 +19,58 @@ import ThreeColumn from '../views/layouts/ThreeColumn';
 import FiftyFifty from '../views/components/FiftyFifty';
 import ImageModal from "../views/components/ImageModal";
 import ImageModalGallery from '../views/components/ImageModalGallery';
+import ProductCard from '../views/components/ProductCard';
 import ProfileCardV1 from '../views/components/ProfileCardV1';
 import ProfileCardV2 from '../views/components/ProfileCardV2';
 import ProfileCoverCard from '../views/components/ProfileCoverCard';
 import SquareImage from "../views/components/SquareImage";
 
 const modalGalleryData = [
-    {
-        image: placeholderImage,
-        title: "placeholder 1"
-    },
-    {
-        image: placeholderImage2,
-        title: "placeholder 2"
-    },
-    {
-        image: placeholderImage,
-        title: "placeholder 1"
-    },
-    {
-        image: placeholderImage2,
-        title: "placeholder 2"
-    },
-    {
-        image: placeholderImage,
-        title: "placeholder 1"
-    }
+	{
+		image: placeholderImage,
+		title: "placeholder 1"
+	},
+	{
+		image: placeholderImage2,
+		title: "placeholder 2"
+	},
+	{
+		image: placeholderImage,
+		title: "placeholder 1"
+	},
+	{
+		image: placeholderImage2,
+		title: "placeholder 2"
+	},
+	{
+		image: placeholderImage,
+		title: "placeholder 1"
+	}
 ]
 
 export default {
-    title: "Image Components"
+	title: "Image Components"
 };
 
 const ThreeProfileCard = () => {
-    return (
-        <ThreeColumn 
-            one={<ProfileCardV1 name={'lorem ipsum'} title={'title'} description={'Deserunt magna ipsum nostrud duis consectetur pariatur proident enim labore nostrud sint officia et. Est ullamco do velit consectetur occaecat. Ea in labore adipisicing ut ut elit anim Lorem laborum magna ipsum dolor.'} />} 
-            two={<ProfileCardV1 name={'lorem ipsum'} title={'title'} />} 
-            three={<ProfileCardV1 name={'lorem ipsum'} title={'title'} />} 
-        />
-    );
+	return (
+		<ThreeColumn 
+			one={<ProfileCardV1 name={'lorem ipsum'} title={'title'} description={'Deserunt magna ipsum nostrud duis consectetur pariatur proident enim labore nostrud sint officia et. Est ullamco do velit consectetur occaecat. Ea in labore adipisicing ut ut elit anim Lorem laborum magna ipsum dolor.'} />} 
+			two={<ProfileCardV1 name={'lorem ipsum'} title={'title'} />} 
+			three={<ProfileCardV1 name={'lorem ipsum'} title={'title'} />} 
+		/>
+	);
 }
 
 const TwoProfileCard = () => {
-    return (
-        <Section className="test">
-            <TwoColumn
-                one={<ProfileCardV2 name={'lorem ipsum'} title={'title'} description={"Deserunt magna ipsum nostrud duis consectetur pariatur proident enim labore nostrud sint officia et. Est ullamco do velit consectetur occaecat. Ea in labore adipisicing ut ut elit anim Lorem laborum magna ipsum dolor."} />} 
-                two={<ProfileCardV2 name={'lorem ipsum'} title={'title'} description={"Deserunt magna ipsum nostrud duis consectetur pariatur proident enim labore nostrud sint officia et. Est ullamco do velit consectetur occaecat. Ea in labore adipisicing ut ut elit anim Lorem laborum magna ipsum dolor."} />} 
-            />
-        </Section>
-    );
+	return (
+		<Section className="test">
+			<TwoColumn
+				one={<ProfileCardV2 name={'lorem ipsum'} title={'title'} description={"Deserunt magna ipsum nostrud duis consectetur pariatur proident enim labore nostrud sint officia et. Est ullamco do velit consectetur occaecat. Ea in labore adipisicing ut ut elit anim Lorem laborum magna ipsum dolor."} />} 
+				two={<ProfileCardV2 name={'lorem ipsum'} title={'title'} description={"Deserunt magna ipsum nostrud duis consectetur pariatur proident enim labore nostrud sint officia et. Est ullamco do velit consectetur occaecat. Ea in labore adipisicing ut ut elit anim Lorem laborum magna ipsum dolor."} />} 
+			/>
+		</Section>
+	);
 }
 
 const ThreeColumnSquareImage = () => {
@@ -83,24 +84,35 @@ const ThreeColumnSquareImage = () => {
 }
 
 const ThreeColumnProfileCoverCard = () => {
-    return (
-        <ThreeColumn
-            one={<ProfileCoverCard profileImage={placeholderImage} />}
-            two={<ProfileCoverCard profileImage={placeholderImage} />}
-            three={<ProfileCoverCard profileImage={placeholderImage} />}
-        />
-    )
+	return (
+		<ThreeColumn
+			one={<ProfileCoverCard profileImage={placeholderImage} />}
+			two={<ProfileCoverCard profileImage={placeholderImage} />}
+			three={<ProfileCoverCard profileImage={placeholderImage} />}
+		/>
+	)
 }
 
 const ModalGallery = () => {
-    return (
-        <ImageModalGallery items={modalGalleryData} />
-    )
+	return (
+		<ImageModalGallery items={modalGalleryData} />
+	)
+}
+
+const ThreeColumnProductCard = () => {
+	return (
+		<ThreeColumn
+		one={<ProductCard />}
+		two={<ProductCard />}
+		three={<ProductCard />}
+		/>
+	)
 }
 
 export const fiftyFifty = () => <FiftyFifty />;
 export const modal = () => <ImageModal image={placeholderImage} />;
 export const modalGallery = () => <ModalGallery />;
+export const productCard = () => <ThreeColumnProductCard />;
 export const profileCardV1 = () => <ThreeProfileCard />;
 export const profileCardV2 = () => <TwoProfileCard />;
 export const profileCoverCard = () => <ThreeColumnProfileCoverCard />;

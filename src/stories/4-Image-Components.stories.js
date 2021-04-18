@@ -19,14 +19,12 @@ import ThreeColumn from '../views/layouts/ThreeColumn';
 import FiftyFifty from '../views/components/FiftyFifty';
 import ImageModal from "../views/components/ImageModal";
 import ImageModalGallery from '../views/components/ImageModalGallery';
-import ProductCard from '../views/components/ProductCard';
 import ProfileCardV1 from '../views/components/ProfileCardV1';
 import ProfileCardV2 from '../views/components/ProfileCardV2';
 import ProfileCoverCard from '../views/components/ProfileCoverCard';
 import SquareImage from "../views/components/SquareImage";
 
 // Data
-import ProductCardData from './../views/data/productCardData.json';
 const modalGalleryData = [
 	{
 		image: placeholderImage,
@@ -101,20 +99,9 @@ const ModalGallery = () => {
 	)
 }
 
-const ThreeColumnProductCard = () => {
-	return (
-		<ThreeColumn
-		one={<ProductCard data={ProductCardData} />}
-		two={<ProductCard data={ProductCardData} />}
-		three={<ProductCard data={ProductCardData} />}
-		/>
-	)
-}
-
 export const fiftyFifty = () => <FiftyFifty />;
 export const modal = () => <ImageModal image={placeholderImage} />;
 export const modalGallery = () => <ModalGallery />;
-export const productCard = () => <ThreeColumnProductCard />;
 export const profileCardV1 = () => <ThreeProfileCard />;
 export const profileCardV2 = () => <TwoProfileCard />;
 export const profileCoverCard = () => <ThreeColumnProfileCoverCard />;

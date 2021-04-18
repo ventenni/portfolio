@@ -14,7 +14,7 @@ const ImageModal = (props) => {
 		<div className="image-modal">
 
 			<div className="image-modal__image" onClick={toggle} style={{backgroundImage: `url(${props.image})`}}>
-				{/* <img src={props.image} alt={props.title}  width="100%" height="100%" /> */}
+				<img src={props.image} alt={props.title}  width="100%" height="100%" />
 			</div>
 
 			<Modal isOpen={modal} toggle={toggle}>

@@ -1,5 +1,8 @@
 .vnt-product-card {
-	border: none;
+
+	&.card {
+		border: none;
+	}
 
 	&:hover {
 		text-decoration: none;
@@ -8,37 +11,37 @@
 	.card-body {
 		padding-right: 0;
 		padding-left: 0;
+	}
 
-		.vnt-product-card__variations {
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: flex-start;
-			margin: 0;
-			// width: 50px;
-			height: 50px;
+	&__variations {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start !important;
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+		height: 50px;
 
-			&__item {
-				flex: 0 1 15%;
-				margin-right: 5px;
-				background-repeat: no-repeat;
-        		background-size: cover;
-				background-position: center;
-			}
+		&__item {
+			flex: 0 1 15%;
+			margin-right: 5px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
 		}
+	}
 
-		.card-title,
-		.card-subtitle {
-			color: black;
-		}
+	.card-title,
+	.card-subtitle {
+		color: black;
+	}
 
-		.vnt-product-card__price {
-			color: black;
+	&__price {
+		color: black;
 
-			&__original {
-				margin-left: .5em;
-				color: rgb(161, 159, 159);
-				text-decoration: line-through;
-			}
+		&__original {
+			margin-left: .5em;
+			color: rgb(161, 159, 159);
+			text-decoration: line-through;
 		}
 	}
 }

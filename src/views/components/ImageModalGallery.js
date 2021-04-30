@@ -22,8 +22,6 @@ const ImageModalGallery = (props) => {
 				})
 			}
 			</div>
-
-			<h4>166 Images Posted</h4>
 		</div>
 	);
 }

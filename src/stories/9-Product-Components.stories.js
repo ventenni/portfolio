@@ -8,7 +8,8 @@ import ProductDisplay from '../views/components/ProductDisplay';
 import ThreeColumn from '../views/layouts/ThreeColumn';
 
 // Data
-import ProductCardData from './../views/data/productCardData.json';
+import ProductCardData from '../views/data/productCardData.json';
+import ProductDisplayData from '../views/data/productDisplayData.json';
 
 export default {
     title: "Product Images"
@@ -25,4 +26,4 @@ const ThreeColumnProductCard = () => {
 }
 
 export const productCard = () => <ThreeColumnProductCard />;
-export const productDisplay = () => <ProductDisplay />;
+export const productDisplay = () => <ProductDisplay data={ProductDisplayData} />;

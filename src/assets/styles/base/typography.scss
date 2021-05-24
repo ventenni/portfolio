@@ -1,6 +1,10 @@
 // Vendor Styles
 @import "~rfs/scss";
 
+body {
+    background: rgb(0, 0, 0);
+    color: #fff;
+}
 
 h1 {
     @include font-size(64px);

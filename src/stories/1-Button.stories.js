@@ -1,18 +1,31 @@
-// import React from 'react';
-// import { action } from '@storybook/addon-actions';
-// import { Button } from '@storybook/react/demo';
+import React from 'react';
 
-// export default {
-//   title: 'Button',
-//   component: Button,
-// };
+// Components
+import Button from './../views/components/Button';
 
-// export const Text = () => <Button onClick={action('clicked')}>Hello Button</Button>;
+// Layout
+import TwoColumn from './../views/layouts/TwoColumn';
+import ThreeColumn from './../views/layouts/ThreeColumn';
 
-// export const Emoji = () => (
-//   <Button onClick={action('clicked')}>
-//     <span role="img" aria-label="so cool">
-//       😀 😎 👍 💯
-//     </span>
-//   </Button>
-// );
+export default {
+  title: 'Buttons',
+  component: Button,
+};
+
+export const BasicButtons = () => (
+	<React.Fragment>
+		<ThreeColumn
+			one={<Button className="btn-basic">Basic</Button>}
+			two={<Button className="btn-basic--outline"rounded={true}>Outline</Button>}
+			three={<Button className="btn-shadow">Shadow</Button>}
+		/>
+
+	</React.Fragment>
+);
+
+export const NeonButtons = () => (
+	<TwoColumn
+		one={<Button className="btn-neon btn-rounded">Rounded</Button>}
+		two={<Button className="btn-neon">Neon</Button>}
+	/>
+);

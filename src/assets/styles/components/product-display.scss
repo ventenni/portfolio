@@ -1,0 +1,31 @@
+.vnt-product-display {
+
+	&__image-column {
+		&__variations {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			margin-top: .2em;
+			height: 50px;
+
+			&__item {
+				flex: 0 1 15%;
+				margin-right: 5px;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center;
+			}
+		}
+	}
+
+	&__info-column {
+		&__prices {
+			span {
+				color: grey;
+				font-size: 1rem;
+				text-decoration: line-through;
+			}
+		}
+	}
+}

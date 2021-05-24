@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "./static/css/main.b37bac73.chunk.css",
+    "main.js": "./main.251b7c8c6cf2f34dd852.bundle.js",
+    "main.css.map": "./static/css/main.b37bac73.chunk.css.map",
+    "main.js.map": "./main.251b7c8c6cf2f34dd852.bundle.js.map",
+    "runtime~main.js": "./runtime~main.251b7c8c6cf2f34dd852.bundle.js",
+    "runtime~main.js.map": "./runtime~main.251b7c8c6cf2f34dd852.bundle.js.map",
+    "vendors~main.css": "./static/css/vendors~main.fe51dd2d.chunk.css",
+    "vendors~main.js": "./vendors~main.251b7c8c6cf2f34dd852.bundle.js",
+    "vendors~main.css.map": "./static/css/vendors~main.fe51dd2d.chunk.css.map",
+    "vendors~main.js.map": "./vendors~main.251b7c8c6cf2f34dd852.bundle.js.map",
+    "iframe.html": "./iframe.html",
+    "precache-manifest.5fbb19d09847db24ed6a9e827ae79e70.js": "./precache-manifest.5fbb19d09847db24ed6a9e827ae79e70.js",
+    "service-worker.js": "./service-worker.js",
+    "static/media/Cygnet 2.jpg": "./static/media/Cygnet 2.1e5f046a.jpg",
+    "static/media/DSC_4780.jpg": "./static/media/DSC_4780.6c7a401c.jpg",
+    "static/media/accusoft.svg": "./static/media/accusoft.4380fd25.svg",
+    "static/media/bell--red.svg": "./static/media/bell--red.060c6444.svg",
+    "static/media/bell.svg": "./static/media/bell.f1c0bcac.svg",
+    "static/media/drawing.svg": "./static/media/drawing.0a629a85.svg",
+    "static/media/envelope--pink.svg": "./static/media/envelope--pink.cc1b798e.svg",
+    "static/media/envelope.svg": "./static/media/envelope.2cdf5c43.svg",
+    "static/media/eye-solid--green.svg": "./static/media/eye-solid--green.920704fd.svg",
+    "static/media/eye-solid.svg": "./static/media/eye-solid.871cfc83.svg",
+    "vendors~main.251b7c8c6cf2f34dd852.bundle.js.LICENSE.txt": "./vendors~main.251b7c8c6cf2f34dd852.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.251b7c8c6cf2f34dd852.bundle.js",
+    "static/css/vendors~main.fe51dd2d.chunk.css",
+    "vendors~main.251b7c8c6cf2f34dd852.bundle.js",
+    "static/css/main.b37bac73.chunk.css",
+    "main.251b7c8c6cf2f34dd852.bundle.js"
+  ]
+}

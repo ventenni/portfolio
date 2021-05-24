@@ -22,6 +22,7 @@ const ImageModalGallery = (props) => {
 				})
 			}
 			</div>
+			<h4>{props.items.length} Images Posted</h4>
 		</div>
 	);
 }

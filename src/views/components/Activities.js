@@ -50,9 +50,9 @@ const Activities = () => {
 			<div className="activity__title">
 				<h2>Activity</h2>
 			</div>
-			<div className="activity__items">
-				{activity.map((item, index) => {
-					return (
+				<div className="activity__items">
+					{activity.map((item, index) => {
+								return (
 						<ActivityItem 
 							activity={item.activity} 
 							location={item.location} 

@@ -10,7 +10,7 @@ const OneColumn = (props) => {
 		<Container className="one-column">
 			<Row>
 				<Col xs={12} style={styles}>
-					{props.one}
+					{props.children}
 				</Col>
 			</Row>
 		</Container>

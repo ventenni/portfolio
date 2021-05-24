@@ -2,656 +2,647 @@
 =            Base - Movie World Icons - CH            =
 =====================================================*/
 
-@import './mixins';
+@import "./mixins";
 
 .vnt-icon {
-	// Base icon settings.
-	display: inline-block;
-	width: 32px;
-	height: 32px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: contain;
-	vertical-align: middle;
-	// Icon sizings.
-
-	&.vnt-icon--small {
-		width: rem(10px);
-		height: rem(10px);
-	}
-
-	&.vnt-icon--medium {
-		width: rem(28px);
-		height: rem(28px);
-	}
-
-	&.vnt-icon--large {
-		width: rem(40px);
-		height: rem(40px);
-	}
-
-	&.vnt-icon--xlarge {
-		width: rem(73px);
-		height: rem(70px);
-	}
-
-	// Icon variants.
-	// Brands.
-	&.vnt-icon {
-		
-		&__linkedin {
-			@include vnt-icon('linkedin');
-		}
-
-		&__500px {
-			@include vnt-icon('500px');
-		}
-
-	}
-
-	
-
-	// UI / Interactives.
-	&.vnt-icon__alert {
-		@include vnt-icon('alert');
-
-		&--red {
-			@include vnt-icon('alert--red');
-		}
-
-		&--blue {
-			@include vnt-icon('alert--blue');
-		}
-	}
-
-	&.vnt-icon__arrow {
-		width: rem(33px);
-		height: rem(11px);
-
-		&--blue {
-			@include vnt-icon('cta-arrow--blue');
-		}
-
-		&--white {
-			@include vnt-icon('cta-arrow--white');
-		}
-
-		&--left {
-			transform: rotateZ(180deg);
-		}
-
-		.btn & {
-			position: absolute;
-			top: 41%;
-			right: 2.1rem;
-			z-index: -1;
-
-			&--left {
-				right: unset;
-				left: 2.1rem;
-			}
-		}
-	}
-
-	&.vnt-icon__gallery {
-		width: rem(20px);
-		height: rem(34px);
-
-		&--prev--blue {
-			@include vnt-icon('largeArrow-left--blue');
-		}
-
-		&--prev--white {
-			@include vnt-icon('largeArrow-left--white');
-		}
-
-		&--next--blue {
-			@include vnt-icon('largeArrow-right--blue');
-		}
-
-		&--next--white {
-			@include vnt-icon('largeArrow-right--white');
-		}
-	}
-
-	&.vnt-icon__close {
-		width: rem(30px);
-		height: rem(30px);
-
-		&--blue {
-			@include vnt-icon('circle-close--blue');
-		}
-
-		&--white {
-			@include vnt-icon('circle-close--white');
-		}
-
-		&--accesso {
-			@include vnt-icon('circle-close--accesso-light-blue');
-		}
-	}
-
-	&.vnt-icon__view {
-		width: rem(30px);
-		height: rem(30px);
-
-		&--blue {
-			@include vnt-icon('view--blue');
-		}
-
-		&--white {
-			@include vnt-icon('view--white');
-		}
-	}
-
-	&.vnt-icon__calendar {
-		@include vnt-icon('calendar');
-	}
-
-	&.vnt-icon__calendar-add {
-
-		&--blue {
-			@include vnt-icon('calendar-add--blue');
-		}
-
-		&--white {
-			@include vnt-icon('calendar-add--white');
-		}
-	}
-
-	&.vnt-icon__carat {
-
-		&--black {
-			@include vnt-icon('carat--black');
-		}
-
-		&--blue {
-			@include vnt-icon('carat--blue');
-
-			&.vnt-icon--large {
-				@include vnt-icon('carat-blue');
-			}
-		}
-
-		&--blue--light {
-			@include vnt-icon('carat--blue--light');
-		}
-
-		&--grey {
-			@include vnt-icon('carat--grey');
-		}
-
-		&--white {
-			@include vnt-icon('carat--white');
-		}
-	}
-
-	&.vnt-icon__chat {
-		@include vnt-icon('chat');
-	}
-
-	&.vnt-icon__clear {
-		@include vnt-icon('clear');
-
-		&--blue {
-			@include vnt-icon('clear--blue');
-		}
-	}
-
-	&.vnt-icon__clock {
-
-		&--white {
-			@include vnt-icon('clock--white');
-		}
-	}
-
-	&.vnt-icon__contact {
-		@include vnt-icon('contact');
-	}
-
-	&.vnt-icon__envelope {
-		@include vnt-icon('envelope');
-	}
-
-	&.vnt-icon__exclamation {
-		&--green {
-			@include vnt-icon('exclamation--green');
-		}
-
-		&--white {
-			@include vnt-icon('exclamation--white');
-		}
-	}
-
-	&.vnt-icon__external {
-		width: rem(40px);
-		height: rem(40px);
-
-		&--black {
-			@include vnt-icon('external--black');
-		}
-
-		&--blue {
-			@include vnt-icon('external--blue');
-		}
-
-		&--white {
-			@include vnt-icon('external--white');
-		}
-
-		.btn & {
-			position: absolute;
-			top: 18%;
-			right: 1.6rem;
-			z-index: -1;
-
-			&--left {
-				right: unset;
-				left: 2.1rem;
-			}
-		}
-	}
-
-	&.vnt-icon__info {
-		transform: rotateZ(180deg);
-		@include vnt-icon('alert');
-
-		&--red {
-			transform: rotateZ(180deg);
-			@include vnt-icon('alert--red');
-		}
-
-		&--blue {
-			transform: rotateZ(180deg);
-			@include vnt-icon('alert--blue');
-		}
-
-		&--grey {
-			@include vnt-icon('information');
-		}
-
-		&--blue-outline {
-			@include vnt-icon('information--blue');
-		}
-	}
-
-	&.vnt-icon__maintenance {
-		@include vnt-icon('maintenance');
-
-		&--green {
-			@include vnt-icon('maintenance--green');
-		}
-
-		&--blue {
-			@include vnt-icon('maintenance--blue');
-		}
-	}
-
-	&.vnt-icon__minus {
-		@include vnt-icon('minus');
-
-		&--blue {
-			@include vnt-icon('minus--blue');
-		}
-
-		&--white {
-			@include vnt-icon('minus');
-		}
-
-		&--small {
-			@include vnt-icon('minus-small');
-		}
-	}
-
-	&.vnt-icon__nav {
-
-		&--back {
-			@include vnt-icon('nav--back');
-			background-position: center left;
-		}
-
-		&--back--hover {
-			@include vnt-icon('nav--back--hover')
-		}
-
-		&--forward {
-			@include vnt-icon('nav--forward');
-			background-position: center right;
-		}
-
-		&--forward--hover {
-			@include vnt-icon('nav--forward--hover');
-		}
-	}
-
-	&.vnt-icon__pause {
-		@include vnt-icon('pause');
-	}
-
-	&.vnt-icon__play {
-		@include vnt-icon('play');
-	}
-
-	&.vnt-icon__plus {
-		@include vnt-icon('plus');
-
-		&--blue {
-			@include vnt-icon('plus--blue');
-		}
-
-		&--white {
-			@include vnt-icon('plus');
-		}
-
-		&--small {
-			@include vnt-icon('plus-small');
-
-			&--green {
-				@include vnt-icon('plus-small--green');
-			}
-
-			&--white {
-				@include vnt-icon('plus-small--white');
-			}
-		}
-	}
-
-	&.vnt-icon__refresh {
-
-		&--blue {
-			@include vnt-icon('refresh--blue');
-		}
-
-		&--grey {
-			@include vnt-icon('refresh--grey');
-		}
-	}
-
-	&.vnt-icon__search {
-		@include vnt-icon('search');
-
-		&--grey {
-			@include vnt-icon('search--grey');
-		}
-	}
-
-	&.vnt-icon__tick {
-		@include vnt-icon('tick');
-	}
-
-	&.vnt-icon__ticket {
-		@include vnt-icon('ticket');
-
-		.btn & {
-			position: absolute;
-			top: 35%;
-			right: 2rem;
-			z-index: 0;
-		}
-	}
-
-	// People.
-	&.vnt-icon__adult {
-		@include vnt-icon('adult');
-	}
-
-	&.vnt-icon__min-height {
-		@include vnt-icon('min-height');
-	}
-
-	&.vnt-icon__person {
-
-		&--grey {
-			@include vnt-icon('person--grey');
-		}
-	}
-
-	&.vnt-icon__min-weight {
-		@include vnt-icon('scale');
-	}
-
-	&.vnt-icon__group-people {
-		@include vnt-icon('group-people');
-	}
-
-	&.vnt-icon__star {
-		&--outline {
-			@include vnt-icon('star--outline');
-		}
-	}
-
-	// Features
-	&.vnt-icon__feature {
-
-		&--camera {
-			@include vnt-icon('feature-camera');
-
-			&--grey {
-				@include vnt-icon('feature-camera--grey');
-			}
-
-			&--on {
-				@include vnt-icon('feature-camera--on');
-			}
-		}
-
-		&--fast-track {
-			@include vnt-icon('feature-fasttrack');
-
-			&--grey {
-				@include vnt-icon('feature-fasttrack--grey');
-			}
-
-			&--on {
-				@include vnt-icon('feature-fasttrack--on');
-			}
-		}
-
-		&--ride-backwards {
-			@include vnt-icon('feature-ride-backwards');
-
-			&--grey {
-				@include vnt-icon('feature-ride-backwards--grey');
-			}
-		}
-
-		&--video {
-			@include vnt-icon('feature-video');
-
-			&--grey {
-				@include vnt-icon('feature-video--grey');
-			}
-
-			&--on {
-				@include vnt-icon('feature-video--on');
-			}
-		}
-
-		&--virtual-reality {
-			@include vnt-icon('feature-vr');
-
-			&--grey {
-				@include vnt-icon('feature-vr--grey');
-			}
-		}
-	}
-
-	// Ride Info
-	&.vnt-icon__ride-info {
-
-		&--belongings {
-			@include vnt-icon('belongings');
-		}
-
-		&--medical {
-			@include vnt-icon('medical');
-		}
-
-		&--parent-child {
-			@include vnt-icon('parent-child');
-		}
-
-		&--parent-holding-child {
-			@include vnt-icon('parent-holding-child');
-		}
-
-		&--parent-swap {
-			@include vnt-icon('parent-swap');
-		}
-
-		&--star {
-			@include vnt-icon('star');
-		}
-
-		&--show {
-			@include vnt-icon('show');
-		}
-
-		&--time {
-			@include vnt-icon('time');
-		}
-
-		&--speed {
-			@include vnt-icon('speed');
-		}
-
-		&--ruler {
-			@include vnt-icon('ruler');
-		}
-
-		&--special-effects {
-			@include vnt-icon('special-effects');
-		}
-
-		&--belongings--grey {
-			@include vnt-icon('belongings--grey');
-		}
-
-		&--medical--grey {
-			@include vnt-icon('medical--grey');
-		}
-
-		&--parent-child--grey {
-			@include vnt-icon('parent-child--grey');
-		}
-
-		&--parent-holding-child--grey {
-			@include vnt-icon('parent-holding-child--grey');
-		}
-
-		&--parent-swap--grey {
-			@include vnt-icon('parent-swap--grey');
-		}
-
-		&--special-effects--grey {
-			@include vnt-icon('special-effects--grey');
-		}
-
-		&--star--grey {
-			@include vnt-icon('star--grey');
-		}
-
-		&--show--grey {
-			@include vnt-icon('show--grey');
-		}
-
-		&--time--grey {
-			@include vnt-icon('time--grey');
-		}
-
-		&--speed--grey {
-			@include vnt-icon('speed--grey');
-		}
-
-		&--ruler--grey {
-			@include vnt-icon('ruler--grey');
-		}
-	}
-
-	// Socials.
-	&.vnt-icon__facebook {
-		@include vnt-icon('facebook');
-
-		&--blue {
-			@include vnt-icon('facebook--blue');
-		}
-	}
-
-	&.vnt-icon__instagram {
-		@include vnt-icon('instagram');
-
-		&--blue {
-			@include vnt-icon('instagram--blue');
-		}
-	}
-
-	&.vnt-icon__twitter {
-		@include vnt-icon('twitter');
-
-		&--blue {
-			@include vnt-icon('twitter--blue');
-		}
-	}
-
-	&.vnt-icon__youtube {
-		@include vnt-icon('youtube');
-
-		&--blue {
-			@include vnt-icon('youtube--blue');
-		}
-	}
-
-	// Operating Hours
-	&.vnt-icon__calendar-clock {
-		@include vnt-icon('calendar-clock');
-	}
-
-	&.vnt-icon__clock2 {
-		@include vnt-icon('clock');
-	}
-
-	&.vnt-icon__coaster {
-		@include vnt-icon('coaster');
-	}
-
-	&.vnt-icon__jellyfish {
-		@include vnt-icon('jellyfish');
-	}
-
-	&.vnt-icon__sheep {
-		@include vnt-icon('sheep');
-	}
-
-	&.vnt-icon__slide {
-		@include vnt-icon('slide');
-	}
+    // Base icon settings.
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    vertical-align: middle;
+    // Icon sizings.
+
+    &.vnt-icon--small {
+        width: rem(10px);
+        height: rem(10px);
+    }
+
+    &.vnt-icon--medium {
+        width: rem(28px);
+        height: rem(28px);
+    }
+
+    &.vnt-icon--large {
+        width: rem(40px);
+        height: rem(40px);
+    }
+
+    &.vnt-icon--xlarge {
+        width: rem(73px);
+        height: rem(70px);
+    }
+
+    // Icon variants.
+    // Brands.
+    &.vnt-icon {
+        &__linkedin {
+            @include vnt-icon("linkedin");
+        }
+
+        &__500px {
+            @include vnt-icon("500px");
+        }
+
+        &__eye {
+            @include vnt-icon("eye-solid");
+        }
+    }
+
+    // UI / Interactives.
+    &.vnt-icon__alert {
+        @include vnt-icon("alert");
+
+        &--red {
+            @include vnt-icon("alert--red");
+        }
+
+        &--blue {
+            @include vnt-icon("alert--blue");
+        }
+    }
+
+    &.vnt-icon__arrow {
+        width: rem(33px);
+        height: rem(11px);
+
+        &--blue {
+            @include vnt-icon("cta-arrow--blue");
+        }
+
+        &--white {
+            @include vnt-icon("cta-arrow--white");
+        }
+
+        &--left {
+            transform: rotateZ(180deg);
+        }
+
+        .btn & {
+            position: absolute;
+            top: 41%;
+            right: 2.1rem;
+            z-index: -1;
+
+            &--left {
+                right: unset;
+                left: 2.1rem;
+            }
+        }
+    }
+
+    &.vnt-icon__gallery {
+        width: rem(20px);
+        height: rem(34px);
+
+        &--prev--blue {
+            @include vnt-icon("largeArrow-left--blue");
+        }
+
+        &--prev--white {
+            @include vnt-icon("largeArrow-left--white");
+        }
+
+        &--next--blue {
+            @include vnt-icon("largeArrow-right--blue");
+        }
+
+        &--next--white {
+            @include vnt-icon("largeArrow-right--white");
+        }
+    }
+
+    &.vnt-icon__close {
+        width: rem(30px);
+        height: rem(30px);
+
+        &--blue {
+            @include vnt-icon("circle-close--blue");
+        }
+
+        &--white {
+            @include vnt-icon("circle-close--white");
+        }
+
+        &--accesso {
+            @include vnt-icon("circle-close--accesso-light-blue");
+        }
+    }
+
+    &.vnt-icon__view {
+        width: rem(30px);
+        height: rem(30px);
+
+        &--blue {
+            @include vnt-icon("view--blue");
+        }
+
+        &--white {
+            @include vnt-icon("view--white");
+        }
+    }
+
+    &.vnt-icon__calendar {
+        @include vnt-icon("calendar");
+    }
+
+    &.vnt-icon__calendar-add {
+        &--blue {
+            @include vnt-icon("calendar-add--blue");
+        }
+
+        &--white {
+            @include vnt-icon("calendar-add--white");
+        }
+    }
+
+    &.vnt-icon__carat {
+        &--black {
+            @include vnt-icon("carat--black");
+        }
+
+        &--blue {
+            @include vnt-icon("carat--blue");
+
+            &.vnt-icon--large {
+                @include vnt-icon("carat-blue");
+            }
+        }
+
+        &--blue--light {
+            @include vnt-icon("carat--blue--light");
+        }
+
+        &--grey {
+            @include vnt-icon("carat--grey");
+        }
+
+        &--white {
+            @include vnt-icon("carat--white");
+        }
+    }
+
+    &.vnt-icon__chat {
+        @include vnt-icon("chat");
+    }
+
+    &.vnt-icon__clear {
+        @include vnt-icon("clear");
+
+        &--blue {
+            @include vnt-icon("clear--blue");
+        }
+    }
+
+    &.vnt-icon__clock {
+        &--white {
+            @include vnt-icon("clock--white");
+        }
+    }
+
+    &.vnt-icon__contact {
+        @include vnt-icon("contact");
+    }
+
+    &.vnt-icon__envelope {
+        @include vnt-icon("envelope");
+    }
+
+    &.vnt-icon__exclamation {
+        &--green {
+            @include vnt-icon("exclamation--green");
+        }
+
+        &--white {
+            @include vnt-icon("exclamation--white");
+        }
+    }
+
+    &.vnt-icon__external {
+        width: rem(40px);
+        height: rem(40px);
+
+        &--black {
+            @include vnt-icon("external--black");
+        }
+
+        &--blue {
+            @include vnt-icon("external--blue");
+        }
+
+        &--white {
+            @include vnt-icon("external--white");
+        }
+
+        .btn & {
+            position: absolute;
+            top: 18%;
+            right: 1.6rem;
+            z-index: -1;
+
+            &--left {
+                right: unset;
+                left: 2.1rem;
+            }
+        }
+    }
+
+    &.vnt-icon__info {
+        transform: rotateZ(180deg);
+        @include vnt-icon("alert");
+
+        &--red {
+            transform: rotateZ(180deg);
+            @include vnt-icon("alert--red");
+        }
+
+        &--blue {
+            transform: rotateZ(180deg);
+            @include vnt-icon("alert--blue");
+        }
+
+        &--grey {
+            @include vnt-icon("information");
+        }
+
+        &--blue-outline {
+            @include vnt-icon("information--blue");
+        }
+    }
+
+    &.vnt-icon__maintenance {
+        @include vnt-icon("maintenance");
+
+        &--green {
+            @include vnt-icon("maintenance--green");
+        }
+
+        &--blue {
+            @include vnt-icon("maintenance--blue");
+        }
+    }
+
+    &.vnt-icon__minus {
+        @include vnt-icon("minus");
+
+        &--blue {
+            @include vnt-icon("minus--blue");
+        }
+
+        &--white {
+            @include vnt-icon("minus");
+        }
+
+        &--small {
+            @include vnt-icon("minus-small");
+        }
+    }
+
+    &.vnt-icon__nav {
+        &--back {
+            @include vnt-icon("nav--back");
+            background-position: center left;
+        }
+
+        &--back--hover {
+            @include vnt-icon("nav--back--hover");
+        }
+
+        &--forward {
+            @include vnt-icon("nav--forward");
+            background-position: center right;
+        }
+
+        &--forward--hover {
+            @include vnt-icon("nav--forward--hover");
+        }
+    }
+
+    &.vnt-icon__pause {
+        @include vnt-icon("pause");
+    }
+
+    &.vnt-icon__play {
+        @include vnt-icon("play");
+    }
+
+    &.vnt-icon__plus {
+        @include vnt-icon("plus");
+
+        &--blue {
+            @include vnt-icon("plus--blue");
+        }
+
+        &--white {
+            @include vnt-icon("plus");
+        }
+
+        &--small {
+            @include vnt-icon("plus-small");
+
+            &--green {
+                @include vnt-icon("plus-small--green");
+            }
+
+            &--white {
+                @include vnt-icon("plus-small--white");
+            }
+        }
+    }
+
+    &.vnt-icon__refresh {
+        &--blue {
+            @include vnt-icon("refresh--blue");
+        }
+
+        &--grey {
+            @include vnt-icon("refresh--grey");
+        }
+    }
+
+    &.vnt-icon__search {
+        @include vnt-icon("search");
+
+        &--grey {
+            @include vnt-icon("search--grey");
+        }
+    }
+
+    &.vnt-icon__tick {
+        @include vnt-icon("tick");
+    }
+
+    &.vnt-icon__ticket {
+        @include vnt-icon("ticket");
+
+        .btn & {
+            position: absolute;
+            top: 35%;
+            right: 2rem;
+            z-index: 0;
+        }
+    }
+
+    // People.
+    &.vnt-icon__adult {
+        @include vnt-icon("adult");
+    }
+
+    &.vnt-icon__min-height {
+        @include vnt-icon("min-height");
+    }
+
+    &.vnt-icon__person {
+        &--grey {
+            @include vnt-icon("person--grey");
+        }
+    }
+
+    &.vnt-icon__min-weight {
+        @include vnt-icon("scale");
+    }
+
+    &.vnt-icon__group-people {
+        @include vnt-icon("group-people");
+    }
+
+    &.vnt-icon__star {
+        &--outline {
+            @include vnt-icon("star--outline");
+        }
+    }
+
+    // Features
+    &.vnt-icon__feature {
+        &--camera {
+            @include vnt-icon("feature-camera");
+
+            &--grey {
+                @include vnt-icon("feature-camera--grey");
+            }
+
+            &--on {
+                @include vnt-icon("feature-camera--on");
+            }
+        }
+
+        &--fast-track {
+            @include vnt-icon("feature-fasttrack");
+
+            &--grey {
+                @include vnt-icon("feature-fasttrack--grey");
+            }
+
+            &--on {
+                @include vnt-icon("feature-fasttrack--on");
+            }
+        }
+
+        &--ride-backwards {
+            @include vnt-icon("feature-ride-backwards");
+
+            &--grey {
+                @include vnt-icon("feature-ride-backwards--grey");
+            }
+        }
+
+        &--video {
+            @include vnt-icon("feature-video");
+
+            &--grey {
+                @include vnt-icon("feature-video--grey");
+            }
+
+            &--on {
+                @include vnt-icon("feature-video--on");
+            }
+        }
+
+        &--virtual-reality {
+            @include vnt-icon("feature-vr");
+
+            &--grey {
+                @include vnt-icon("feature-vr--grey");
+            }
+        }
+    }
+
+    // Ride Info
+    &.vnt-icon__ride-info {
+        &--belongings {
+            @include vnt-icon("belongings");
+        }
+
+        &--medical {
+            @include vnt-icon("medical");
+        }
+
+        &--parent-child {
+            @include vnt-icon("parent-child");
+        }
+
+        &--parent-holding-child {
+            @include vnt-icon("parent-holding-child");
+        }
+
+        &--parent-swap {
+            @include vnt-icon("parent-swap");
+        }
+
+        &--star {
+            @include vnt-icon("star");
+        }
+
+        &--show {
+            @include vnt-icon("show");
+        }
+
+        &--time {
+            @include vnt-icon("time");
+        }
+
+        &--speed {
+            @include vnt-icon("speed");
+        }
+
+        &--ruler {
+            @include vnt-icon("ruler");
+        }
+
+        &--special-effects {
+            @include vnt-icon("special-effects");
+        }
+
+        &--belongings--grey {
+            @include vnt-icon("belongings--grey");
+        }
+
+        &--medical--grey {
+            @include vnt-icon("medical--grey");
+        }
+
+        &--parent-child--grey {
+            @include vnt-icon("parent-child--grey");
+        }
+
+        &--parent-holding-child--grey {
+            @include vnt-icon("parent-holding-child--grey");
+        }
+
+        &--parent-swap--grey {
+            @include vnt-icon("parent-swap--grey");
+        }
+
+        &--special-effects--grey {
+            @include vnt-icon("special-effects--grey");
+        }
+
+        &--star--grey {
+            @include vnt-icon("star--grey");
+        }
+
+        &--show--grey {
+            @include vnt-icon("show--grey");
+        }
+
+        &--time--grey {
+            @include vnt-icon("time--grey");
+        }
+
+        &--speed--grey {
+            @include vnt-icon("speed--grey");
+        }
+
+        &--ruler--grey {
+            @include vnt-icon("ruler--grey");
+        }
+    }
+
+    // Socials.
+    &.vnt-icon__facebook {
+        @include vnt-icon("facebook");
+
+        &--blue {
+            @include vnt-icon("facebook--blue");
+        }
+    }
+
+    &.vnt-icon__instagram {
+        @include vnt-icon("instagram");
+
+        &--blue {
+            @include vnt-icon("instagram--blue");
+        }
+    }
+
+    &.vnt-icon__twitter {
+        @include vnt-icon("twitter");
+
+        &--blue {
+            @include vnt-icon("twitter--blue");
+        }
+    }
+
+    &.vnt-icon__youtube {
+        @include vnt-icon("youtube");
+
+        &--blue {
+            @include vnt-icon("youtube--blue");
+        }
+    }
+
+    // Operating Hours
+    &.vnt-icon__calendar-clock {
+        @include vnt-icon("calendar-clock");
+    }
+
+    &.vnt-icon__clock2 {
+        @include vnt-icon("clock");
+    }
+
+    &.vnt-icon__coaster {
+        @include vnt-icon("coaster");
+    }
+
+    &.vnt-icon__jellyfish {
+        @include vnt-icon("jellyfish");
+    }
+
+    &.vnt-icon__sheep {
+        @include vnt-icon("sheep");
+    }
+
+    &.vnt-icon__slide {
+        @include vnt-icon("slide");
+    }
 }
 
 // Handle links with nested icons.
 // Necessary tweaks for correct horizontal and vertical alignment of icon and text.
 
 .mw-link--has-icon {
-	position: relative;
+    position: relative;
 
-	.vnt-icon {
-		position: absolute;
-		top: 50%;
-		left: 0;
-		transform: translateY(-50%);
+    .vnt-icon {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
 
-		&__text {
-			padding-left: rem(30px);
-		}
-	}
+        &__text {
+            padding-left: rem(30px);
+        }
+    }
 
-	&.btn {
+    &.btn {
+        .vnt-icon {
+            left: rem(30px);
 
-		.vnt-icon {
-			left: rem(30px);
-
-			&__text {
-				padding-left: rem(38px);
-			}
-		}
-	}
+            &__text {
+                padding-left: rem(38px);
+            }
+        }
+    }
 }

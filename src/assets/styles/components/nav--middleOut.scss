@@ -1,7 +1,7 @@
-@import '../base/bootstrap';
-@import '../base/mixins';
-@import '../base/typography';
-@import '../base/variables';
+@import "../base/bootstrap";
+@import "../base/mixins";
+@import "../base/typography";
+@import "../base/variables";
 
 .nav-middle-out {
     position: sticky;
@@ -59,7 +59,6 @@
     }
 
     .navbar-nav {
-    
         li {
             font-size: 2em;
             list-style: none;
@@ -68,12 +67,11 @@
             a {
                 text-decoration: none;
 
-                @include transition(color .4s ease);
+                @include transition(color 0.4s ease);
 
                 &:hover {
-                    color: rgba($color: #000000, $alpha: 1.0)
+                    color: rgba($color: #000000, $alpha: 1);
                 }
-    
             }
         }
     }

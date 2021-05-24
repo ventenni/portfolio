@@ -5,6 +5,7 @@ import Button from './../views/components/Button';
 
 // Layout
 import TwoColumn from './../views/layouts/TwoColumn';
+import ThreeColumn from './../views/layouts/ThreeColumn';
 
 export default {
   title: 'Buttons',
@@ -13,14 +14,10 @@ export default {
 
 export const BasicButtons = () => (
 	<React.Fragment>
-		<TwoColumn
-			one={<Button className="btn-basic">Background</Button>}
+		<ThreeColumn
+			one={<Button className="btn-basic">Basic</Button>}
 			two={<Button className="btn-basic--outline"rounded={true}>Outline</Button>}
-		/>
-
-		<TwoColumn
-			one={<Button className="btn-shadow">Shadow</Button>}
-			two={<Button className="btn-gradient">tbc....</Button>}
+			three={<Button className="btn-shadow">Shadow</Button>}
 		/>
 
 	</React.Fragment>
